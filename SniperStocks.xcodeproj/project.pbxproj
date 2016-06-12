@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BB41D0D571F0053130C /* AppDelegate.swift */; };
+		AF106BB71D0D571F0053130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BB61D0D571F0053130C /* ViewController.swift */; };
+		AF106BBA1D0D57200053130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BB81D0D57200053130C /* Main.storyboard */; };
+		AF106BBC1D0D57200053130C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF106BBB1D0D57200053130C /* Assets.xcassets */; };
+		AF106BBF1D0D57200053130C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BBD1D0D57200053130C /* LaunchScreen.storyboard */; };
+		AF106BCA1D0D57210053130C /* SniperStocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BC91D0D57210053130C /* SniperStocksTests.swift */; };
+		AF106BD51D0D57210053130C /* SniperStocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BD41D0D57210053130C /* SniperStocksUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF106BC61D0D57210053130C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF106BA91D0D57190053130C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF106BB01D0D571A0053130C;
+			remoteInfo = SniperStocks;
+		};
+		AF106BD11D0D57210053130C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF106BA91D0D57190053130C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF106BB01D0D571A0053130C;
+			remoteInfo = SniperStocks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF106BB11D0D571E0053130C /* SniperStocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SniperStocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF106BB41D0D571F0053130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF106BB61D0D571F0053130C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF106BB91D0D57200053130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF106BBB1D0D57200053130C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF106BBE1D0D57200053130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF106BC01D0D57200053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF106BC51D0D57210053130C /* SniperStocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SniperStocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF106BC91D0D57210053130C /* SniperStocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniperStocksTests.swift; sourceTree = "<group>"; };
+		AF106BCB1D0D57210053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF106BD01D0D57210053130C /* SniperStocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SniperStocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF106BD41D0D57210053130C /* SniperStocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniperStocksUITests.swift; sourceTree = "<group>"; };
+		AF106BD61D0D57210053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF106BAE1D0D571A0053130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BC21D0D57210053130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BCD1D0D57210053130C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF106BA81D0D57180053130C = {
+			isa = PBXGroup;
+			children = (
+				AF106BB31D0D571F0053130C /* SniperStocks */,
+				AF106BC81D0D57210053130C /* SniperStocksTests */,
+				AF106BD31D0D57210053130C /* SniperStocksUITests */,
+				AF106BB21D0D571E0053130C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF106BB21D0D571E0053130C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF106BB11D0D571E0053130C /* SniperStocks.app */,
+				AF106BC51D0D57210053130C /* SniperStocksTests.xctest */,
+				AF106BD01D0D57210053130C /* SniperStocksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF106BB31D0D571F0053130C /* SniperStocks */ = {
+			isa = PBXGroup;
+			children = (
+				AF106BB41D0D571F0053130C /* AppDelegate.swift */,
+				AF106BB61D0D571F0053130C /* ViewController.swift */,
+				AF106BB81D0D57200053130C /* Main.storyboard */,
+				AF106BBB1D0D57200053130C /* Assets.xcassets */,
+				AF106BBD1D0D57200053130C /* LaunchScreen.storyboard */,
+				AF106BC01D0D57200053130C /* Info.plist */,
+			);
+			path = SniperStocks;
+			sourceTree = "<group>";
+		};
+		AF106BC81D0D57210053130C /* SniperStocksTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF106BC91D0D57210053130C /* SniperStocksTests.swift */,
+				AF106BCB1D0D57210053130C /* Info.plist */,
+			);
+			path = SniperStocksTests;
+			sourceTree = "<group>";
+		};
+		AF106BD31D0D57210053130C /* SniperStocksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF106BD41D0D57210053130C /* SniperStocksUITests.swift */,
+				AF106BD61D0D57210053130C /* Info.plist */,
+			);
+			path = SniperStocksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF106BB01D0D571A0053130C /* SniperStocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF106BD91D0D57210053130C /* Build configuration list for PBXNativeTarget "SniperStocks" */;
+			buildPhases = (
+				AF106BAD1D0D571A0053130C /* Sources */,
+				AF106BAE1D0D571A0053130C /* Frameworks */,
+				AF106BAF1D0D571A0053130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SniperStocks;
+			productName = SniperStocks;
+			productReference = AF106BB11D0D571E0053130C /* SniperStocks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF106BC41D0D57210053130C /* SniperStocksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF106BDC1D0D57210053130C /* Build configuration list for PBXNativeTarget "SniperStocksTests" */;
+			buildPhases = (
+				AF106BC11D0D57210053130C /* Sources */,
+				AF106BC21D0D57210053130C /* Frameworks */,
+				AF106BC31D0D57210053130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF106BC71D0D57210053130C /* PBXTargetDependency */,
+			);
+			name = SniperStocksTests;
+			productName = SniperStocksTests;
+			productReference = AF106BC51D0D57210053130C /* SniperStocksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF106BCF1D0D57210053130C /* SniperStocksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF106BDF1D0D57210053130C /* Build configuration list for PBXNativeTarget "SniperStocksUITests" */;
+			buildPhases = (
+				AF106BCC1D0D57210053130C /* Sources */,
+				AF106BCD1D0D57210053130C /* Frameworks */,
+				AF106BCE1D0D57210053130C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF106BD21D0D57210053130C /* PBXTargetDependency */,
+			);
+			name = SniperStocksUITests;
+			productName = SniperStocksUITests;
+			productReference = AF106BD01D0D57210053130C /* SniperStocksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF106BA91D0D57190053130C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Abdelrahman Mohamed";
+				TargetAttributes = {
+					AF106BB01D0D571A0053130C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6KNM32Y4FM;
+					};
+					AF106BC41D0D57210053130C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6KNM32Y4FM;
+						TestTargetID = AF106BB01D0D571A0053130C;
+					};
+					AF106BCF1D0D57210053130C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6KNM32Y4FM;
+						TestTargetID = AF106BB01D0D571A0053130C;
+					};
+				};
+			};
+			buildConfigurationList = AF106BAC1D0D57190053130C /* Build configuration list for PBXProject "SniperStocks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF106BA81D0D57180053130C;
+			productRefGroup = AF106BB21D0D571E0053130C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF106BB01D0D571A0053130C /* SniperStocks */,
+				AF106BC41D0D57210053130C /* SniperStocksTests */,
+				AF106BCF1D0D57210053130C /* SniperStocksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF106BAF1D0D571A0053130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF106BBF1D0D57200053130C /* LaunchScreen.storyboard in Resources */,
+				AF106BBC1D0D57200053130C /* Assets.xcassets in Resources */,
+				AF106BBA1D0D57200053130C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BC31D0D57210053130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BCE1D0D57210053130C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF106BAD1D0D571A0053130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF106BB71D0D571F0053130C /* ViewController.swift in Sources */,
+				AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BC11D0D57210053130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF106BCA1D0D57210053130C /* SniperStocksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF106BCC1D0D57210053130C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF106BD51D0D57210053130C /* SniperStocksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF106BC71D0D57210053130C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF106BB01D0D571A0053130C /* SniperStocks */;
+			targetProxy = AF106BC61D0D57210053130C /* PBXContainerItemProxy */;
+		};
+		AF106BD21D0D57210053130C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF106BB01D0D571A0053130C /* SniperStocks */;
+			targetProxy = AF106BD11D0D57210053130C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF106BB81D0D57200053130C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF106BB91D0D57200053130C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF106BBD1D0D57200053130C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF106BBE1D0D57200053130C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF106BD71D0D57210053130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF106BD81D0D57210053130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF106BDA1D0D57210053130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SniperStocks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AF106BDB1D0D57210053130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SniperStocks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AF106BDD1D0D57210053130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SniperStocksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SniperStocks.app/SniperStocks";
+			};
+			name = Debug;
+		};
+		AF106BDE1D0D57210053130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SniperStocksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SniperStocks.app/SniperStocks";
+			};
+			name = Release;
+		};
+		AF106BE01D0D57210053130C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SniperStocksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SniperStocks;
+			};
+			name = Debug;
+		};
+		AF106BE11D0D57210053130C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SniperStocksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SniperStocks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF106BAC1D0D57190053130C /* Build configuration list for PBXProject "SniperStocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF106BD71D0D57210053130C /* Debug */,
+				AF106BD81D0D57210053130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF106BD91D0D57210053130C /* Build configuration list for PBXNativeTarget "SniperStocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF106BDA1D0D57210053130C /* Debug */,
+				AF106BDB1D0D57210053130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF106BDC1D0D57210053130C /* Build configuration list for PBXNativeTarget "SniperStocksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF106BDD1D0D57210053130C /* Debug */,
+				AF106BDE1D0D57210053130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF106BDF1D0D57210053130C /* Build configuration list for PBXNativeTarget "SniperStocksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF106BE01D0D57210053130C /* Debug */,
+				AF106BE11D0D57210053130C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF106BA91D0D57190053130C /* Project object */;
+}
