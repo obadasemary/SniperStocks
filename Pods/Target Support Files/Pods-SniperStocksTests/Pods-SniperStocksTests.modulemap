@@ -1,0 +1,6 @@
+framework module Pods_SniperStocksTests {
+  umbrella header "Pods-SniperStocksTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
