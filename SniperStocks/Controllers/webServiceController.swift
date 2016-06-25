@@ -11,7 +11,7 @@ import Alamofire
 
 class webServiceController: NSObject
 {
-    func test()
+    func getData(parameters:[String:String])
     {
         let parameters =
             [
@@ -34,20 +34,5 @@ class webServiceController: NSObject
         }
     }
         
-//        let headers = [
-//            "Content-Type": "application/x-www-form-urlencoded",
-//            "Accept": "application/json"
-//        ]
-//        
-//        Alamofire.request(.POST,
-//                          "http://snniper.com/api/service.php", parameters: parameters, encoding: . URLEncodedInURL, headers: headers).response
-//        { request, response, data, error in
-//            print(request)
-//            print(response)
-//            print(data)
-//            print(error)
-//            let dataString = NSString(data: data!, encoding:NSUTF8StringEncoding)
-//            print(dataString)
-//        }
-}
+    }
 }
