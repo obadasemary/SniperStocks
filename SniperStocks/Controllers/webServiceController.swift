@@ -11,14 +11,7 @@ import Alamofire
 
 class webServiceController: NSObject
 {
-    func getData(parameters:[String:String])
-    {
-        let parameters =
-            [
-                "action": "login",
-                "user_name": "obada",
-                "user_password": "obada"
-        ]
+    func getData(parameters:[String:String]) {
 
         Alamofire.request(.POST, "http://snniper.com/api/service.php", parameters: parameters)
         .responseJSON { response in
@@ -28,11 +21,10 @@ class webServiceController: NSObject
             print(response.data)     // server data
             print(response.result)   // result of response serialization
     
-        if let JSON = response.result.value {
-        
-            print("JSON: \(JSON)")
+            if let JSON = response.result.value {
+            
+                print("JSON: \(JSON)")
+            }
         }
-    }
-        
     }
 }
