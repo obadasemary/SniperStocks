@@ -64,33 +64,9 @@
             </objects>
             <point key="canvasLocation" x="579" y="-36"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="peM-EN-6rJ">
-            <objects>
-                <viewController id="jer-wS-fga" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oWJ-gc-tYe"/>
-                        <viewControllerLayoutGuide type="bottom" id="RO4-37-YEB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hdk-YU-oUv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="1cy-OE-T3e">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ya-Va-xRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="947" y="-36"/>
-        </scene>
     </scenes>
     <resources>
         <image name="bg" width="640" height="960"/>
-        <image name="main" width="640" height="960"/>
         <image name="main_03" width="435" height="205"/>
         <image name="main_07" width="339" height="89"/>
         <image name="main_newRegs" width="549" height="105"/>
