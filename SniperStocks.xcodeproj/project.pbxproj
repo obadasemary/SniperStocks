@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2191BD9EB1AAD9F7BBA69D1F /* Pods_SniperStocksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA94A0931C3B393564FE267B /* Pods_SniperStocksTests.framework */; };
 		343209840CDF2641E377477D /* Pods_SniperStocksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08719C9414CE0120500D5756 /* Pods_SniperStocksUITests.framework */; };
+		4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4106F0DD1D42B07A00B780BA /* WebServiceProtocol.swift */; };
 		41EE491D1D1B0132008A51B0 /* webServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EE491C1D1B0132008A51B0 /* webServiceController.swift */; };
 		635F7E651E86A6D2AA2E519F /* Pods_SniperStocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50BF1936C0704E79812DADA /* Pods_SniperStocks.framework */; };
 		AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BB41D0D571F0053130C /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		08719C9414CE0120500D5756 /* Pods_SniperStocksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9B8F4A49C9112056112873 /* Pods-SniperStocksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocksTests/Pods-SniperStocksTests.release.xcconfig"; sourceTree = "<group>"; };
+		4106F0DD1D42B07A00B780BA /* WebServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceProtocol.swift; sourceTree = "<group>"; };
 		41EE491C1D1B0132008A51B0 /* webServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webServiceController.swift; sourceTree = "<group>"; };
 		5BB794EC8916F0EA73C3170F /* Pods-SniperStocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocks.release.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocks/Pods-SniperStocks.release.xcconfig"; sourceTree = "<group>"; };
 		848CB2385ADC4B7E6D3640D8 /* Pods-SniperStocksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocksTests/Pods-SniperStocksTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4106F0DC1D42B05500B780BA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4106F0DD1D42B07A00B780BA /* WebServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		41EE49171D1AFEF4008A51B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +171,7 @@
 		AF106BB31D0D571F0053130C /* SniperStocks */ = {
 			isa = PBXGroup;
 			children = (
+				4106F0DC1D42B05500B780BA /* Protocols */,
 				41EE49181D1AFF04008A51B0 /* Controllers */,
 				41EE491A1D1AFF04008A51B0 /* Models */,
 				41EE49171D1AFEF4008A51B0 /* Views */,
@@ -457,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
 				AF106BB71D0D571F0053130C /* ViewController.swift in Sources */,
 				AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */,
 				41EE491D1D1B0132008A51B0 /* webServiceController.swift in Sources */,
@@ -608,6 +620,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -620,6 +633,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
