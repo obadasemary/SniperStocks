@@ -469,6 +469,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F4EDB91D43E4AC0027EE88 /* MainViewController.swift in Sources */,
+				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
+				AF106BB71D0D571F0053130C /* ViewController.swift in Sources */,
 				AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */,
 				41EE491D1D1B0132008A51B0 /* webServiceController.swift in Sources */,
 			);

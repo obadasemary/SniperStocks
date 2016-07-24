@@ -16,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-//        let a = webServiceController()
-//        let param = ["action":"login", "user_name":"obada", "user_password":"obada"]
-//        a.getData(param)
         return true
     }
 
