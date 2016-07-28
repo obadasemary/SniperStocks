@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  RegisterViewController.swift
 //  SniperStocks
 //
 //  Created by Abdelrahman Mohamed on 7/25/16.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        // Do any additional setup after loading the view.
     }
+
+    
 }
