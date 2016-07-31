@@ -62,6 +62,7 @@ class webServiceController: NSObject
 //                        self._userPhone = userTelephone
 //                        self._parseID = parseID
 //                    }
+                    
                     self.webServiceProtocol?.onRegisterSuccess(result as! NSDictionary)
                 }
             }
@@ -111,9 +112,31 @@ class webServiceController: NSObject
                 
                 if let result = response.result.value
                 {
-                    self.webServiceProtocol?.onGetAllCompany(result as! NSDictionary)
+                    self.webServiceProtocol?.onGetAllCompanySuccess(result as! NSDictionary)
                 }
             }
     }
+    
+    func sendMoney(userName:String, userSession:String, bankName:String, userTelephone:String, userPassword:String)
+    {
+        
+        let parameters = ["action":"send_money",
+                          "name_bank":bankName,
+                          "user_name":userName,
+                          "user_tel":userTelephone,
+                          "user_psd":userPassword,
+                          "user_session":userSession]
+        
+        Alamofire.request(.POST, "http://snniper.com/api/service.php", parameters: parameters)
+            .responseJSON
+            {   response in
+                
+                if let result = response.result.value
+                {
+                    self.webServiceProtocol?.onSendMoneySuccess(result as! NSDictionary)
+                }
+        }
+    }
+
     
 }

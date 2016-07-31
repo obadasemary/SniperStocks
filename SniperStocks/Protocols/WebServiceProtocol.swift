@@ -12,8 +12,8 @@ protocol WebServiceProtocol
 {
     func onRegisterSuccess(result:NSDictionary)
     func onLoginSuccess(result:NSDictionary)
-    func onGetAllCompany(result:NSDictionary)
-
+    func onGetAllCompanySuccess(result:NSDictionary)
+    func onSendMoneySuccess(result:NSDictionary)
     
     
 }
