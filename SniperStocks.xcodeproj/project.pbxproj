@@ -13,12 +13,13 @@
 		41EE491D1D1B0132008A51B0 /* webServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EE491C1D1B0132008A51B0 /* webServiceController.swift */; };
 		635F7E651E86A6D2AA2E519F /* Pods_SniperStocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50BF1936C0704E79812DADA /* Pods_SniperStocks.framework */; };
 		AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BB41D0D571F0053130C /* AppDelegate.swift */; };
-		AF106BB71D0D571F0053130C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BB61D0D571F0053130C /* ViewController.swift */; };
 		AF106BBA1D0D57200053130C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BB81D0D57200053130C /* Main.storyboard */; };
 		AF106BBC1D0D57200053130C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF106BBB1D0D57200053130C /* Assets.xcassets */; };
 		AF106BBF1D0D57200053130C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF106BBD1D0D57200053130C /* LaunchScreen.storyboard */; };
 		AF106BCA1D0D57210053130C /* SniperStocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BC91D0D57210053130C /* SniperStocksTests.swift */; };
 		AF106BD51D0D57210053130C /* SniperStocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BD41D0D57210053130C /* SniperStocksUITests.swift */; };
+		AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BD1D462DB700E11C31 /* MainViewController.swift */; };
+		AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,6 @@
 		A629D11AD536304E77E18D26 /* Pods-SniperStocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocks/Pods-SniperStocks.debug.xcconfig"; sourceTree = "<group>"; };
 		AF106BB11D0D571E0053130C /* SniperStocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SniperStocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF106BB41D0D571F0053130C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF106BB61D0D571F0053130C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF106BB91D0D57200053130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF106BBB1D0D57200053130C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF106BBE1D0D57200053130C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		AF106BD01D0D57210053130C /* SniperStocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SniperStocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF106BD41D0D57210053130C /* SniperStocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniperStocksUITests.swift; sourceTree = "<group>"; };
 		AF106BD61D0D57210053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFC830BD1D462DB700E11C31 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C71912CAF95DA5776D225992 /* Pods-SniperStocksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocksUITests/Pods-SniperStocksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA94A0931C3B393564FE267B /* Pods_SniperStocksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50BF1936C0704E79812DADA /* Pods_SniperStocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,13 +101,6 @@
 				4106F0DD1D42B07A00B780BA /* WebServiceProtocol.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		41EE49171D1AFEF4008A51B0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		41EE49181D1AFF04008A51B0 /* Controllers */ = {
@@ -174,9 +169,8 @@
 				4106F0DC1D42B05500B780BA /* Protocols */,
 				41EE49181D1AFF04008A51B0 /* Controllers */,
 				41EE491A1D1AFF04008A51B0 /* Models */,
-				41EE49171D1AFEF4008A51B0 /* Views */,
+				AFC830BC1D462D6800E11C31 /* Views */,
 				AF106BB41D0D571F0053130C /* AppDelegate.swift */,
-				AF106BB61D0D571F0053130C /* ViewController.swift */,
 				AF106BB81D0D57200053130C /* Main.storyboard */,
 				AF106BBB1D0D57200053130C /* Assets.xcassets */,
 				AF106BBD1D0D57200053130C /* LaunchScreen.storyboard */,
@@ -201,6 +195,15 @@
 				AF106BD61D0D57210053130C /* Info.plist */,
 			);
 			path = SniperStocksUITests;
+			sourceTree = "<group>";
+		};
+		AFC830BC1D462D6800E11C31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFC830BD1D462DB700E11C31 /* MainViewController.swift */,
+				AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,9 +472,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
-				AF106BB71D0D571F0053130C /* ViewController.swift in Sources */,
+				AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */,
 				AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */,
 				41EE491D1D1B0132008A51B0 /* webServiceController.swift in Sources */,
+				AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

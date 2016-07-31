@@ -16,10 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let a = webServiceController()
-        let param = ["action":"login", "user_name":"obada", "user_password":"obada"]
-//        let param2 = ["action":"register", "user_name":"obada92", "user_pwd":"obada", "user_tel":"0024", "parse_id":"123"]
-        a.getAllCompany("obada", userSession: "")
+
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
         return true
     }
 
