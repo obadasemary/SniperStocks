@@ -11,6 +11,7 @@ import Alamofire
 
 class webServiceController: NSObject
 {
+    let BaseURL = "http://snniper.com/api/service.php"
     var _parseID = ""
     var _userCode = ""
     var _userID = ""
@@ -135,6 +136,20 @@ class webServiceController: NSObject
                 {
                     self.webServiceProtocol?.onSendMoneySuccess(result as! NSDictionary)
                 }
+        }
+    }
+    
+    func updateTelephone(userName: String, newUserTelephone:String) {
+        
+        let parameters = ["action":"update_tel",
+                          "user_name":userName,
+                          "user_tel":newUserTelephone]
+        
+        Alamofire.request(.POST, BaseURL, parameters: parameters).responseJSON { (response) in
+            
+            if let result = response.result.value {
+                self.webServiceProtocol?.onUpdateTelephone(result as! NSDictionary)
+            }
         }
     }
 
