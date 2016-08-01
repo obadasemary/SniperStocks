@@ -21,6 +21,7 @@
 		AF270C471D4DF3A5001E1DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF270C461D4DF3A5001E1DBE /* ViewController.swift */; };
 		AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BD1D462DB700E11C31 /* MainViewController.swift */; };
 		AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */; };
+		AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		AF270C461D4DF3A5001E1DBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFC830BD1D462DB700E11C31 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SniperStocksConstants.swift; sourceTree = "<group>"; };
 		C71912CAF95DA5776D225992 /* Pods-SniperStocksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocksUITests/Pods-SniperStocksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA94A0931C3B393564FE267B /* Pods_SniperStocksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50BF1936C0704E79812DADA /* Pods_SniperStocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				41EE491C1D1B0132008A51B0 /* webServiceController.swift */,
+				AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				AF270C471D4DF3A5001E1DBE /* ViewController.swift in Sources */,
 				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
 				AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */,
+				AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */,
 				AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */,
 				41EE491D1D1B0132008A51B0 /* webServiceController.swift in Sources */,
 				AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */,
