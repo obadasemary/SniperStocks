@@ -67,7 +67,7 @@ class webServiceController: NSObject {
 //                        self._parseID = parseID
 //                    }
                     
-                    self.webServiceProtocol?.onRegisterSuccess(result as! NSDictionary)
+                    self.webServiceProtocol?.onRegisterSuccess!(result as! NSDictionary)
                 }
             }
 
@@ -99,7 +99,7 @@ class webServiceController: NSObject {
 //                        self._userSession = user["user_session"] as! String
 //                        self._userID = user["user_id"] as! String
 //                    }
-                    self.webServiceProtocol?.onLoginSuccess(result as! NSDictionary)
+                    self.webServiceProtocol?.onLoginSuccess!(result as! NSDictionary)
                 }
         }
         
@@ -120,7 +120,7 @@ class webServiceController: NSObject {
                 
                 if let result = response.result.value
                 {
-                    self.webServiceProtocol?.onGetAllCompanySuccess(result as! NSDictionary)
+                    self.webServiceProtocol?.onGetAllCompanySuccess!(result as! NSDictionary)
                 }
             }
     }
@@ -143,7 +143,7 @@ class webServiceController: NSObject {
                 
                 if let result = response.result.value
                 {
-                    self.webServiceProtocol?.onSendMoneySuccess(result as! NSDictionary)
+                    self.webServiceProtocol?.onSendMoneySuccess!(result as! NSDictionary)
                 }
         }
     }
@@ -159,7 +159,7 @@ class webServiceController: NSObject {
         Alamofire.request(.POST, BaseURL, parameters: parameters).responseJSON { (response) in
             
             if let result = response.result.value {
-                self.webServiceProtocol?.onUpdateTelephone(result as! NSDictionary)
+                self.webServiceProtocol?.onUpdateTelephone!(result as! NSDictionary)
             }
         }
     }
@@ -177,7 +177,7 @@ class webServiceController: NSObject {
             
             if let result = response.result.value {
                 
-                self.webServiceProtocol?.onUpdatePassword(result as! NSDictionary)
+                self.webServiceProtocol?.onUpdatePassword!(result as! NSDictionary)
             }
         }
     }
@@ -193,7 +193,7 @@ class webServiceController: NSObject {
             
             if let result = response.result.value {
                 
-                self.webServiceProtocol?.onsendActiveCode(result as! NSDictionary)
+                self.webServiceProtocol?.onsendActiveCode!(result as! NSDictionary)
             }
         }
     }
@@ -209,7 +209,7 @@ class webServiceController: NSObject {
             
             if let result = response.result.value {
                 
-                self.webServiceProtocol?.onActivedCompteUser(result as! NSDictionary)
+                self.webServiceProtocol?.onActivedCompteUser!(result as! NSDictionary)
             }
         }
     }
@@ -224,7 +224,7 @@ class webServiceController: NSObject {
             
             if let result = response.result.value {
                 
-                self.webServiceProtocol?.onSayHello(result as! NSDictionary)
+                self.webServiceProtocol?.onSayHello!(result as! NSDictionary)
             }
         }
     }
@@ -239,7 +239,7 @@ class webServiceController: NSObject {
             
             if let result = response.result.value {
                 
-                self.webServiceProtocol?.onPwdRecover(result as! NSDictionary)
+                self.webServiceProtocol?.onPwdRecover!(result as! NSDictionary)
             }
         }
     }
@@ -254,7 +254,7 @@ class webServiceController: NSObject {
             
             if let result = response.result.value {
                 
-                self.webServiceProtocol?.onUpdateNotif(result as! NSDictionary)
+                self.webServiceProtocol?.onUpdateNotif!(result as! NSDictionary)
             }
         }
     }

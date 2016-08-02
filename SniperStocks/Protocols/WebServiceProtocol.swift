@@ -8,17 +8,17 @@
 
 import Foundation
 
-protocol WebServiceProtocol
+@objc protocol WebServiceProtocol
 {
-    func onRegisterSuccess(result:NSDictionary)
-    func onLoginSuccess(result:NSDictionary)
-    func onGetAllCompanySuccess(result:NSDictionary)
-    func onSendMoneySuccess(result:NSDictionary)
-    func onUpdateTelephone(result:NSDictionary)
-    func onUpdatePassword(result: NSDictionary)
-    func onsendActiveCode(result: NSDictionary)
-    func onActivedCompteUser(result: NSDictionary)
-    func onSayHello(result: NSDictionary)
-    func onPwdRecover(result: NSDictionary)
-    func onUpdateNotif(result: NSDictionary)
+    optional func onRegisterSuccess(result:NSDictionary)
+    optional func onLoginSuccess(result:NSDictionary)
+    optional func onGetAllCompanySuccess(result:NSDictionary)
+    optional func onSendMoneySuccess(result:NSDictionary)
+    optional func onUpdateTelephone(result:NSDictionary)
+    optional func onUpdatePassword(result: NSDictionary)
+    optional func onsendActiveCode(result: NSDictionary)
+    optional func onActivedCompteUser(result: NSDictionary)
+    optional func onSayHello(result: NSDictionary)
+    optional func onPwdRecover(result: NSDictionary)
+    optional func onUpdateNotif(result: NSDictionary)
 }
