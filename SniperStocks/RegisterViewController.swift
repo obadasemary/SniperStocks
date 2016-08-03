@@ -19,10 +19,11 @@ class RegisterViewController: UIViewController, WebServiceProtocol
         self.webService = webServiceController.sharedInstance()
         // Do any additional setup after loading the view.
     }
+    
     func onRegisterSuccess(result:NSDictionary)
     {
         // Example for how to parse data
-        self.webService?._userCode = result["usercode"] as! String
+        self.webService?._userCode = result["user_code_active"] as! String
     }
 
     

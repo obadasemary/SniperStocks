@@ -19,6 +19,7 @@
 		AF106BCA1D0D57210053130C /* SniperStocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BC91D0D57210053130C /* SniperStocksTests.swift */; };
 		AF106BD51D0D57210053130C /* SniperStocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BD41D0D57210053130C /* SniperStocksUITests.swift */; };
 		AF270C471D4DF3A5001E1DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF270C461D4DF3A5001E1DBE /* ViewController.swift */; };
+		AF286BFD1D5217C9003B91BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF286BFC1D5217C9003B91BE /* LoginViewController.swift */; };
 		AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BD1D462DB700E11C31 /* MainViewController.swift */; };
 		AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */; };
 		AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */; };
@@ -63,6 +64,7 @@
 		AF106BD41D0D57210053130C /* SniperStocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SniperStocksUITests.swift; sourceTree = "<group>"; };
 		AF106BD61D0D57210053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF270C461D4DF3A5001E1DBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF286BFC1D5217C9003B91BE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFC830BD1D462DB700E11C31 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SniperStocksConstants.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				AFC830BD1D462DB700E11C31 /* MainViewController.swift */,
 				AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */,
+				AF286BFC1D5217C9003B91BE /* LoginViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
 				AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */,
 				AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */,
+				AF286BFD1D5217C9003B91BE /* LoginViewController.swift in Sources */,
 				AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */,
 				41EE491D1D1B0132008A51B0 /* webServiceController.swift in Sources */,
 				AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */,

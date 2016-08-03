@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let a = webServiceController()
-        a.getData(["action": "get_all_company", "user_name": "obada", "user_session": "57401"])
+//        let a = webServiceController()
+//        a.getData(["action": "get_all_company", "user_name": "obada", "user_session": "57401"])
         
         
     }
@@ -36,21 +36,21 @@ class ViewController: UIViewController {
     @IBAction func SendActiveCode(sender: AnyObject) {
         
         let a = webServiceController()
-        a.sendActiveCode("obada")
+        a.sendActiveCode("ali")
         print("SendActiveCode Success")
     }
     
     @IBAction func ActivedCompteUser(sender: AnyObject) {
         
         let a = webServiceController()
-        a.activedCompteUser("obada", userCode: "3115")
+        a.activedCompteUser("ali", userCode: "2905")
         print("ActivedCompteUser Success")
     }
     
     @IBAction func SayHello(sender: AnyObject) {
         
         let a = webServiceController()
-        a.sayHello("0097431099515")
+        a.sayHello("004917668806539")
         print("SayHello Success")
     }
     

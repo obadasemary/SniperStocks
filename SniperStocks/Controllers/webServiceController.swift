@@ -47,8 +47,8 @@ class webServiceController: NSObject {
     
     func register(userPassword:String, userName:String, userTelephone:String, parseID:String) {
         let parameters = ["action":"register",
-                          "user_pwd":userPassword,
                           "user_name":userName,
+                          "user_pwd":userPassword,
                           "user_tel":userTelephone,
                           "parse_id":parseID]
         
@@ -59,6 +59,11 @@ class webServiceController: NSObject {
                 if let result = response.result.value
                 {
                     
+                    guard (result["status"] as! String == "success") else {
+                        print("Error")
+                        return
+                    }
+                
 //                    if result["status"] as! String == "success"
 //                    {
 //                        self._userPassword = userPassword
@@ -75,11 +80,11 @@ class webServiceController: NSObject {
     
     // MARK: - Login
     
-    func login(userPassword:String, userName:String, parseID:String)
+    func login(userName:String, userPassword:String, parseID:String)
     {
         let parameters = ["action":"login",
-                          "user_password":userPassword,
                           "user_name":userName,
+                          "user_password":userPassword,
                           "parse_id":parseID]
         
         Alamofire.request(.POST, BaseURL, parameters: parameters)
@@ -88,7 +93,15 @@ class webServiceController: NSObject {
                 
                 if let result = response.result.value
                 {
-//                    let user = result["user"] as! NSDictionary
+                    let user = result["user"] as! NSDictionary
+                    
+//                    let status = result["status"] as! String
+                    
+                    guard (result["status"] as! String == "success") else {
+                        print("Login Error")
+                        return
+                    }
+                    
 //                    if user["user_name"] as! String == userName
 //                    {
 //                        self._userPassword = userPassword
@@ -99,7 +112,9 @@ class webServiceController: NSObject {
 //                        self._userSession = user["user_session"] as! String
 //                        self._userID = user["user_id"] as! String
 //                    }
-                    self.webServiceProtocol?.onLoginSuccess!(result as! NSDictionary)
+                    self.webServiceProtocol?.onLoginSuccess!(user )
+                    
+                    print("Login Success")
                 }
         }
         
