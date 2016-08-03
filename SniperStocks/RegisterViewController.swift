@@ -8,12 +8,21 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, WebServiceProtocol
+{
+
+    var webService:webServiceController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.webService = webServiceController.sharedInstance()
         // Do any additional setup after loading the view.
+    }
+    func onRegisterSuccess(result:NSDictionary)
+    {
+        // Example for how to parse data
+        self.webService?._userCode = result["usercode"] as! String
     }
 
     
