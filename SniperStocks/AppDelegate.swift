@@ -19,6 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
+//       let logo = UIImage(named: "logoButton.png")
+//        let imageView = UIImageView(image:logo)
+//        self.navigationController.navigationBar.setBackgroundImage(imageView, forBarMetrics: .Default)
+
+//        UINavigationBar.appearance().setBackgroundImage(logo, forBarMetrics: .Default)
+
+//        self.navigationItem.titleView = imageView
+        
         return true
     }
 
@@ -43,6 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+//    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+//        return UIStatusBarStyle.LightContent
+//    }
 }
 
