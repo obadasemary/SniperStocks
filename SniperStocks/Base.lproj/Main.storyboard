@@ -207,7 +207,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ادخال كلمة المرور الجديدة:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpi-PW-gPi">
-                                <rect key="frame" x="61" y="183" width="199" height="30"/>
+                                <rect key="frame" x="61" y="139" width="199" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="NUB-1S-U6O"/>
                                     <constraint firstAttribute="height" constant="30" id="pjV-zU-iQl"/>
@@ -217,14 +217,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-xI-WhW">
-                                <rect key="frame" x="52" y="252" width="216" height="40"/>
+                                <rect key="frame" x="52" y="208" width="216" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="QwE-NM-fgq"/>
                                     <constraint firstAttribute="width" constant="216" id="beR-6q-Bn2"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="**********" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yc1-vY-Kpp">
-                                <rect key="frame" x="52" y="252" width="172" height="30"/>
+                                <rect key="frame" x="52" y="208" width="172" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="bXu-Vz-JbD"/>
                                     <constraint firstAttribute="height" constant="30" id="nQ8-Cg-3G0"/>
@@ -234,14 +234,14 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password" translatesAutoresizingMaskIntoConstraints="NO" id="MJ8-zV-5Ax">
-                                <rect key="frame" x="52" y="320" width="216" height="40"/>
+                                <rect key="frame" x="52" y="276" width="216" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="30h-L9-RW0"/>
                                     <constraint firstAttribute="height" constant="40" id="Nod-BX-Dr4"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="**********" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kj5-5Y-loZ">
-                                <rect key="frame" x="52" y="320" width="172" height="30"/>
+                                <rect key="frame" x="52" y="276" width="172" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="B6k-at-PYU"/>
                                     <constraint firstAttribute="height" constant="30" id="o00-OT-eaM"/>
@@ -251,7 +251,7 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYH-0T-fik">
-                                <rect key="frame" x="52" y="407" width="216" height="52"/>
+                                <rect key="frame" x="52" y="363" width="216" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="ePd-bq-XxM"/>
                                     <constraint firstAttribute="height" constant="52" id="yKN-vQ-Nro"/>
@@ -501,20 +501,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من فضلك ادخل كود التفعيل: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr0-kh-6tv">
-                                <rect key="frame" x="61" y="150" width="199" height="24"/>
+                                <rect key="frame" x="61" y="106" width="199" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CodeField" translatesAutoresizingMaskIntoConstraints="NO" id="tfa-gf-nsf">
-                                <rect key="frame" x="52" y="230" width="216" height="40"/>
+                                <rect key="frame" x="52" y="186" width="216" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="CDg-ED-SDa"/>
                                     <constraint firstAttribute="width" constant="216" id="L1I-nC-jgu"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOE-yA-pOQ">
-                                <rect key="frame" x="52" y="230" width="172" height="30"/>
+                                <rect key="frame" x="52" y="186" width="172" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Pc6-2c-yO8"/>
                                     <constraint firstAttribute="width" constant="172" id="ryc-Og-nYy"/>
@@ -524,7 +524,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHR-KW-qV5">
-                                <rect key="frame" x="52" y="300" width="216" height="52"/>
+                                <rect key="frame" x="52" y="256" width="216" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="8Ae-eZ-Nso"/>
                                     <constraint firstAttribute="height" constant="52" id="fYO-RL-p4h"/>
@@ -746,7 +746,7 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8WG-82-nfp" id="kvN-cC-DGH">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re7-e5-kVU">
@@ -784,7 +784,7 @@
                                         <rect key="frame" x="0.0" y="78" width="320" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iaq-lT-mRj" id="HO5-uM-S6x">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or6-dd-uLV">
@@ -876,7 +876,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuG-Bu-ace">
-                                <rect key="frame" x="10" y="81" width="300" height="120"/>
+                                <rect key="frame" x="10" y="37" width="300" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Mjd-sy-obd"/>
                                     <constraint firstAttribute="width" constant="300" id="h9N-P0-lNb"/>
@@ -887,20 +887,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxU-WW-yKb">
-                                <rect key="frame" x="72" y="215" width="177" height="30"/>
+                                <rect key="frame" x="72" y="171" width="177" height="30"/>
                                 <state key="normal" title="لمعرفة الحسابات البنكية اضعظ هنا">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BankFeild" translatesAutoresizingMaskIntoConstraints="NO" id="i4l-nJ-BFt">
-                                <rect key="frame" x="52" y="264" width="216" height="40"/>
+                                <rect key="frame" x="52" y="220" width="216" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BgC-UD-KQY"/>
                                     <constraint firstAttribute="width" constant="216" id="q48-y8-wJt"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="**********" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9w-et-lBB">
-                                <rect key="frame" x="52" y="390" width="172" height="30"/>
+                                <rect key="frame" x="52" y="346" width="172" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="1zA-xk-onU"/>
                                     <constraint firstAttribute="height" constant="30" id="3ee-zF-T5t"/>
@@ -910,7 +910,7 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oiD-GM-M0b">
-                                <rect key="frame" x="52" y="264" width="172" height="30"/>
+                                <rect key="frame" x="52" y="220" width="172" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="Rr8-oh-XHR"/>
                                     <constraint firstAttribute="height" constant="30" id="nTt-4H-nIO"/>
@@ -920,14 +920,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneNumber" translatesAutoresizingMaskIntoConstraints="NO" id="BK2-VJ-uwJ">
-                                <rect key="frame" x="52" y="390" width="216" height="40"/>
+                                <rect key="frame" x="52" y="346" width="216" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="2T2-Tm-CaP"/>
                                     <constraint firstAttribute="height" constant="40" id="8AJ-tN-7Qw"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="**********" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9AT-mv-Jh6">
-                                <rect key="frame" x="52" y="325" width="172" height="30"/>
+                                <rect key="frame" x="52" y="281" width="172" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="46q-ag-3mF"/>
                                     <constraint firstAttribute="height" constant="30" id="q7s-IP-JF0"/>
@@ -937,14 +937,14 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manFriend" translatesAutoresizingMaskIntoConstraints="NO" id="Ycb-aA-cdL">
-                                <rect key="frame" x="52" y="325" width="216" height="40"/>
+                                <rect key="frame" x="52" y="281" width="216" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="4o4-rJ-ZSF"/>
                                     <constraint firstAttribute="height" constant="40" id="4zU-mJ-DUx"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK7-xf-lPC">
-                                <rect key="frame" x="52" y="451" width="216" height="60"/>
+                                <rect key="frame" x="52" y="407" width="216" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="6md-Nk-d4S"/>
                                     <constraint firstAttribute="height" constant="60" id="jdf-KC-zmN"/>
