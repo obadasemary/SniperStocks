@@ -49,7 +49,8 @@ class LoginViewController: UIViewController, WebServiceProtocol{
     func onLoginSuccess(result: NSDictionary) {
         
 //        self.wSC._userSession = result["user_session"] as! String
-        self.wSC._userSession = result["user_session"] as! String
+        wSC._userSession = result["user_session"] as! String
+        print(wSC._userSession)
         
         
 //        "user_name": "obada",

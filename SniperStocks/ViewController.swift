@@ -18,6 +18,13 @@ class ViewController: UIViewController {
         
         
     }
+    
+    @IBAction func Register(sender: AnyObject) {
+        
+        let a = webServiceController()
+        a.register("obada", userPassword: "obada", userTelephone: "0097431099515", parseID: "")
+        print("Register Success")
+    }
 
     @IBAction func UpdateTelephone(sender: AnyObject) {
         
@@ -36,21 +43,21 @@ class ViewController: UIViewController {
     @IBAction func SendActiveCode(sender: AnyObject) {
         
         let a = webServiceController()
-        a.sendActiveCode("ali")
+        a.sendActiveCode("obada")
         print("SendActiveCode Success")
     }
     
     @IBAction func ActivedCompteUser(sender: AnyObject) {
         
         let a = webServiceController()
-        a.activedCompteUser("ali", userCode: "2905")
+        a.activedCompteUser("obada", userCode: "7519")
         print("ActivedCompteUser Success")
     }
     
     @IBAction func SayHello(sender: AnyObject) {
         
         let a = webServiceController()
-        a.sayHello("004917668806539")
+        a.sayHello("0097450480689")
         print("SayHello Success")
     }
     

@@ -45,7 +45,8 @@ class webServiceController: NSObject {
     
     // MARK: - Register
     
-    func register(userPassword:String, userName:String, userTelephone:String, parseID:String) {
+    func register(userName:String, userPassword:String, userTelephone:String, parseID:String) {
+        
         let parameters = ["action":"register",
                           "user_name":userName,
                           "user_pwd":userPassword,
@@ -219,6 +220,7 @@ class webServiceController: NSObject {
             if let result = response.result.value {
                 
                 self.webServiceProtocol?.onsendActiveCode!(result as! NSDictionary)
+//                print(result)
             }
         }
     }

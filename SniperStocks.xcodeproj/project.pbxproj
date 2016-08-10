@@ -22,6 +22,7 @@
 		AF286BFD1D5217C9003B91BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF286BFC1D5217C9003B91BE /* LoginViewController.swift */; };
 		AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BD1D462DB700E11C31 /* MainViewController.swift */; };
 		AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */; };
+		AFFD2F191D5BD9A800372742 /* ActivateCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F181D5BD9A800372742 /* ActivateCodeViewController.swift */; };
 		AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		AF286BFC1D5217C9003B91BE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFC830BD1D462DB700E11C31 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AFFD2F181D5BD9A800372742 /* ActivateCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivateCodeViewController.swift; sourceTree = "<group>"; };
 		AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SniperStocksConstants.swift; sourceTree = "<group>"; };
 		C71912CAF95DA5776D225992 /* Pods-SniperStocksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocksUITests/Pods-SniperStocksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA94A0931C3B393564FE267B /* Pods_SniperStocksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 				AFC830BD1D462DB700E11C31 /* MainViewController.swift */,
 				AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */,
 				AF286BFC1D5217C9003B91BE /* LoginViewController.swift */,
+				AFFD2F181D5BD9A800372742 /* ActivateCodeViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				AF286BFD1D5217C9003B91BE /* LoginViewController.swift in Sources */,
 				AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */,
 				41EE491D1D1B0132008A51B0 /* webServiceController.swift in Sources */,
+				AFFD2F191D5BD9A800372742 /* ActivateCodeViewController.swift in Sources */,
 				AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
