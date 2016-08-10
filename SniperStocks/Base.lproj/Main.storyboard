@@ -154,6 +154,7 @@
                                 </constraints>
                                 <state key="normal" image="LoginButton"/>
                                 <connections>
+                                    <action selector="loginButton:" destination="8AA-TX-8Vs" eventType="touchUpInside" id="EX3-Ua-ohM"/>
                                     <segue destination="ngW-z0-xYX" kind="push" id="ali-04-H8l"/>
                                 </connections>
                             </button>
@@ -168,6 +169,7 @@
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="resetPassword:" destination="8AA-TX-8Vs" eventType="touchUpInside" id="nR0-oA-NKv"/>
                                     <segue destination="pa0-aJ-X0u" kind="push" id="pyC-ex-IwW"/>
                                 </connections>
                             </button>
@@ -189,6 +191,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="تسجيل الدخول" id="wH3-S9-Wto"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="bft-GM-mbx" id="SW7-qP-AJ1"/>
+                        <outlet property="usernameTextField" destination="Rmh-NV-LNS" id="xl4-v9-UKg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv5-PJ-VuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -743,10 +749,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="8WG-82-nfp">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8WG-82-nfp" id="kvN-cC-DGH">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re7-e5-kVU">
@@ -781,10 +787,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="Iaq-lT-mRj">
-                                        <rect key="frame" x="0.0" y="78" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="142" width="320" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iaq-lT-mRj" id="HO5-uM-S6x">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or6-dd-uLV">
@@ -1063,9 +1069,9 @@
         <image name="videoTwo" width="329" height="194"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DkF-5H-gzl"/>
-        <segue reference="7Kz-pU-MNV"/>
-        <segue reference="0Kf-lP-ocs"/>
+        <segue reference="ali-04-H8l"/>
         <segue reference="6SI-cg-Nkg"/>
+        <segue reference="pyC-ex-IwW"/>
+        <segue reference="7Kz-pU-MNV"/>
     </inferredMetricsTieBreakers>
 </document>

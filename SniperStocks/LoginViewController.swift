@@ -10,6 +10,10 @@ import UIKit
 
 class LoginViewController: UIViewController, WebServiceProtocol{
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+
     
     var wSC = webServiceController()
 
@@ -19,10 +23,28 @@ class LoginViewController: UIViewController, WebServiceProtocol{
 //        let wSC = webServiceController()
         wSC = webServiceController.sharedInstance()
         wSC.webServiceProtocol = self
-        wSC.login("obada", userPassword: "obada", parseID: "")
+        
+        usernameTextField.attributedPlaceholder = NSAttributedString(string:"اسم المستخدم", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "*********", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
+        
+        
+        
+//        wSC.login("obada", userPassword: "obada", parseID: "")
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func loginButton(sender: AnyObject) {
+        
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        
+        wSC.login(username!, userPassword: password!, parseID: "")
+    }
+
+    @IBAction func resetPassword(sender: AnyObject) {
+    }
+    
 
     func onLoginSuccess(result: NSDictionary) {
         

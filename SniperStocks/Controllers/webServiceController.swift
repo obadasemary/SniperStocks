@@ -95,12 +95,22 @@ class webServiceController: NSObject {
                 {
                     let user = result["user"] as! NSDictionary
                     
-//                    let status = result["status"] as! String
+                    let status = result["status"] as! String
                     
-                    guard (result["status"] as! String == "success") else {
+                    if status == "success" {
+                        
+                        self.webServiceProtocol?.onLoginSuccess!(user )
+                        
+                        print("Login Success")
+                    } else {
                         print("Login Error")
-                        return
                     }
+                    
+                    
+//                    guard (result["status"] as! String == "success") else {
+//                        print("Login Error")
+//                        return
+//                    }
                     
 //                    if user["user_name"] as! String == userName
 //                    {
@@ -112,9 +122,9 @@ class webServiceController: NSObject {
 //                        self._userSession = user["user_session"] as! String
 //                        self._userID = user["user_id"] as! String
 //                    }
-                    self.webServiceProtocol?.onLoginSuccess!(user )
-                    
-                    print("Login Success")
+//                    self.webServiceProtocol?.onLoginSuccess!(user )
+//                    
+//                    print("Login Success")
                 }
         }
         
