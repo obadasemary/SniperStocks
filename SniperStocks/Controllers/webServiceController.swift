@@ -217,11 +217,11 @@ class webServiceController: NSObject {
         
         Alamofire.request(.POST, BaseURL, parameters: parameters).responseJSON { (response) in
             
-            if let result = response.result.value {
-                
-                self.webServiceProtocol?.onsendActiveCode!(result as! NSDictionary)
-//                print(result)
-            }
+//            if let result = response.result.value {
+//                
+//                self.webServiceProtocol?.onsendActiveCode!(result as! NSDictionary)
+////                print(result)
+//            }
         }
     }
     

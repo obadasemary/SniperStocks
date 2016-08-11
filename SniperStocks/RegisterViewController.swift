@@ -8,8 +8,8 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController, WebServiceProtocol
-{
+class RegisterViewController: UIViewController, WebServiceProtocol {
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -27,7 +27,7 @@ class RegisterViewController: UIViewController, WebServiceProtocol
 
         
         usernameTextField.attributedPlaceholder = NSAttributedString(string:"اسم المستخدم", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
-        phoneTextField.attributedPlaceholder = NSAttributedString(string:"00974 1000 1000", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
+        phoneTextField.attributedPlaceholder = NSAttributedString(string:"رقم الجوال", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "*********", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
         cpasswordTextField.attributedPlaceholder = NSAttributedString(string: "*********", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
         
@@ -55,7 +55,10 @@ class RegisterViewController: UIViewController, WebServiceProtocol
         wSC._userName = usernameTextField.text!
         
         wSC.sendActiveCode(wSC._userName)
+        
+        performSegueWithIdentifier("ActiveCodeSegue", sender: self)
     }
 
+    
     
 }

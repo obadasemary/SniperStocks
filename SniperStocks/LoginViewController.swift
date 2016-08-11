@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, WebServiceProtocol{
+class LoginViewController: UIViewController, WebServiceProtocol {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!

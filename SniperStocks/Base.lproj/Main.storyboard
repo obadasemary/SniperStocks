@@ -440,7 +440,6 @@
                                 <state key="normal" image="LoginRegistButton"/>
                                 <connections>
                                     <action selector="RegisterButton:" destination="R5w-MP-0uW" eventType="touchUpInside" id="SMa-PC-kgo"/>
-                                    <segue destination="H2z-hw-C86" kind="push" id="uEC-5D-4fC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vH-Ay-RCq">
@@ -509,6 +508,7 @@
                         <outlet property="passwordTextField" destination="HIj-oz-eUz" id="W14-Re-vl4"/>
                         <outlet property="phoneTextField" destination="O4T-Pr-ZHd" id="zZJ-zl-tHE"/>
                         <outlet property="usernameTextField" destination="KJW-Od-RLn" id="fqf-KC-S60"/>
+                        <segue destination="H2z-hw-C86" kind="push" identifier="ActiveCodeSegue" id="Rzh-T4-lVy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0v-eh-V2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -774,7 +774,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="8WG-82-nfp">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8WG-82-nfp" id="kvN-cC-DGH">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -812,7 +812,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="Iaq-lT-mRj">
-                                        <rect key="frame" x="0.0" y="78" width="320" height="63"/>
+                                        <rect key="frame" x="0.0" y="142" width="320" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iaq-lT-mRj" id="HO5-uM-S6x">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
@@ -1095,8 +1095,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DkF-5H-gzl"/>
-        <segue reference="7Kz-pU-MNV"/>
-        <segue reference="Pb4-qF-pwX"/>
+        <segue reference="Rzh-T4-lVy"/>
+        <segue reference="6SI-cg-Nkg"/>
         <segue reference="pyC-ex-IwW"/>
     </inferredMetricsTieBreakers>
 </document>
