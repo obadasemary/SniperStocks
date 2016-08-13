@@ -37,43 +37,41 @@ class LoginViewController: UIViewController, WebServiceProtocol {
     @IBAction func loginButton(sender: AnyObject) {
         
         let username = usernameTextField.text
-        let password = passwordTextField.text
+        wSC._userPassword = passwordTextField.text!
         
-        wSC.login(username!, userPassword: password!, parseID: "")
+        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
     }
 
     @IBAction func resetPassword(sender: AnyObject) {
+        
+        performSegueWithIdentifier("ResetPasswordSegue", sender: self)
     }
     
 
     func onLoginSuccess(result: NSDictionary) {
         
-//        self.wSC._userSession = result["user_session"] as! String
+        wSC._userID = result["user_id"] as! String
+        wSC._userName = result["user_name"] as! String
+        wSC._userPhone = result["user_phone"] as! String
+        wSC._userIsActive = result["user_isActive"] as! String
+        wSC._userCode = result["user_code_active"] as! String
+        wSC._userDateActive = result["user_date_active"] as! String
+        wSC._userDateRegister = result["user_date_register"] as! String
         wSC._userSession = result["user_session"] as! String
+        wSC._parseID = result["parse_id"] as! String
+        
+        print(wSC._userID)
+        print(wSC._userName)
+        print(wSC._userPhone)
+        print(wSC._userIsActive)
+        print(wSC._userCode)
+        print(wSC._userDateActive)
+        print(wSC._userDateRegister)
         print(wSC._userSession)
+        print(wSC._parseID)
         
         
-//        "user_name": "obada",
-//        "user_phone": "0097431099515",
-//        "user_password": "95b06691f8c5b6fefeccfce368201522",
-//        "user_isActive": "1",
-//        "user_code_active": "3115",
-//        "user_date_active": "5",
-//        "user_date_register": "01-08-2016 15:38",
-//        "user_session": "93237",
-//        "parse_id": ""
+        performSegueWithIdentifier("LoginSegue", sender: self)
+        
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

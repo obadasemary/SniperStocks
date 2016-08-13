@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     @IBAction func SayHello(sender: AnyObject) {
         
         let a = webServiceController()
-        a.sayHello("0097450480689")
+        a.sayHello("0097431099515")
         print("SayHello Success")
     }
     

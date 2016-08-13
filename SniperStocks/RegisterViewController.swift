@@ -17,15 +17,12 @@ class RegisterViewController: UIViewController, WebServiceProtocol {
     
     var wSC = webServiceController()
 
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         wSC = webServiceController.sharedInstance()
         wSC.webServiceProtocol = self
 
-        
         usernameTextField.attributedPlaceholder = NSAttributedString(string:"اسم المستخدم", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
         phoneTextField.attributedPlaceholder = NSAttributedString(string:"رقم الجوال", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "*********", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
@@ -36,10 +33,10 @@ class RegisterViewController: UIViewController, WebServiceProtocol {
     @IBAction func RegisterButton(sender: AnyObject) {
         
         let username = usernameTextField.text
-        let password = passwordTextField.text
+        wSC._userPassword = passwordTextField.text!
         let phone = phoneTextField.text
         
-        wSC.register(username!, userPassword: password!, userTelephone: phone!, parseID: "")
+        wSC.register(username!, userPassword: wSC._userPassword, userTelephone: phone!, parseID: "")
     }
     
     

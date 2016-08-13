@@ -19,6 +19,9 @@ class webServiceController: NSObject {
     var _userPassword = ""
     var _userPhone = ""
     var _userSession = ""
+    var _userIsActive = ""
+    var _userDateRegister = ""
+    var _userDateActive = ""
 
     var resultArray:NSDictionary = NSDictionary()
     var webServiceProtocol: WebServiceProtocol?
@@ -201,10 +204,10 @@ class webServiceController: NSObject {
         
         Alamofire.request(.POST, BaseURL, parameters: parameters).responseJSON { (response) in
             
-            if let result = response.result.value {
-                
-                self.webServiceProtocol?.onUpdatePassword!(result as! NSDictionary)
-            }
+//            if let result = response.result.value {
+//                
+//                self.webServiceProtocol?.onUpdatePassword!(result as! NSDictionary)
+//            }
         }
     }
 
@@ -236,7 +239,18 @@ class webServiceController: NSObject {
             
             if let result = response.result.value {
                 
-                self.webServiceProtocol?.onActivedCompteUser!(result as! NSDictionary)
+                let user = result["user"] as! NSDictionary
+                
+                let status = result["status"] as! String
+                
+                if status == "success" {
+                    
+                    self.webServiceProtocol?.onActivedCompteUser!(user )
+                    
+                    print("ActivedCompteUser Success")
+                } else {
+                    print("ActivedCompteUser Error")
+                }
             }
         }
     }
@@ -249,10 +263,10 @@ class webServiceController: NSObject {
         
         Alamofire.request(.POST, BaseURL, parameters: parameters).responseJSON { (response) in
             
-            if let result = response.result.value {
-                
-                self.webServiceProtocol?.onSayHello!(result as! NSDictionary)
-            }
+//            if let result = response.result.value {
+//                
+//                self.webServiceProtocol?.onSayHello!(result as! NSDictionary)
+//            }
         }
     }
     
@@ -264,10 +278,10 @@ class webServiceController: NSObject {
         
         Alamofire.request(.POST, BaseURL, parameters: parameters).responseJSON { (response) in
             
-            if let result = response.result.value {
-                
-                self.webServiceProtocol?.onPwdRecover!(result as! NSDictionary)
-            }
+//            if let result = response.result.value {
+//                
+//                self.webServiceProtocol?.onPwdRecover!(result as! NSDictionary)
+//            }
         }
     }
     

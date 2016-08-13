@@ -168,7 +168,6 @@
                                 <state key="normal" image="LoginButton"/>
                                 <connections>
                                     <action selector="loginButton:" destination="8AA-TX-8Vs" eventType="touchUpInside" id="EX3-Ua-ohM"/>
-                                    <segue destination="ngW-z0-xYX" kind="push" id="ali-04-H8l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGf-iI-Iho">
@@ -183,7 +182,6 @@
                                 </state>
                                 <connections>
                                     <action selector="resetPassword:" destination="8AA-TX-8Vs" eventType="touchUpInside" id="nR0-oA-NKv"/>
-                                    <segue destination="pa0-aJ-X0u" kind="push" id="pyC-ex-IwW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -207,6 +205,8 @@
                     <connections>
                         <outlet property="passwordTextField" destination="bft-GM-mbx" id="SW7-qP-AJ1"/>
                         <outlet property="usernameTextField" destination="Rmh-NV-LNS" id="xl4-v9-UKg"/>
+                        <segue destination="ngW-z0-xYX" kind="push" identifier="LoginSegue" id="BF9-yV-lsX"/>
+                        <segue destination="7Lk-EZ-FK3" kind="push" identifier="ResetPasswordSegue" id="aRn-E5-kdU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv5-PJ-VuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,7 +216,7 @@
         <!--تغيير كلمة المرور-->
         <scene sceneID="YbU-gf-Xya">
             <objects>
-                <viewController id="pa0-aJ-X0u" sceneMemberID="viewController">
+                <viewController id="pa0-aJ-X0u" customClass="ChangePasswordViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R7t-V0-hio"/>
                         <viewControllerLayoutGuide type="bottom" id="Gda-UM-Wd3"/>
@@ -276,6 +276,9 @@
                                     <constraint firstAttribute="height" constant="52" id="yKN-vQ-Nro"/>
                                 </constraints>
                                 <state key="normal" image="ActivetButton"/>
+                                <connections>
+                                    <action selector="ChangeButton:" destination="pa0-aJ-X0u" eventType="touchUpInside" id="6nN-0f-V0p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -295,10 +298,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="تغيير كلمة المرور" id="iCn-Xb-Y99"/>
+                    <connections>
+                        <outlet property="cPasswordTextField" destination="kj5-5Y-loZ" id="5f8-CV-aeW"/>
+                        <outlet property="passwordTextField" destination="Yc1-vY-Kpp" id="LQq-Cz-wiR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yJ-rb-DhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4592" y="-871"/>
+            <point key="canvasLocation" x="5038" y="-851"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="SdW-OG-abX">
@@ -499,10 +506,7 @@
                             <constraint firstItem="KJW-Od-RLn" firstAttribute="top" secondItem="1Mj-nE-mXL" secondAttribute="top" id="xb3-b7-qFf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="تسجيل مستخدم جديد" id="ovX-Qh-Ew1">
-                        <barButtonItem key="leftBarButtonItem" image="backButton" id="Sgv-PX-6If"/>
-                        <barButtonItem key="rightBarButtonItem" image="logoButton" id="Srp-mG-skv"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="تسجيل مستخدم جديد" id="ovX-Qh-Ew1"/>
                     <connections>
                         <outlet property="cpasswordTextField" destination="4dA-tx-8Dh" id="0um-4v-4qh"/>
                         <outlet property="passwordTextField" destination="HIj-oz-eUz" id="W14-Re-vl4"/>
@@ -514,6 +518,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0v-eh-V2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3464" y="268"/>
+        </scene>
+        <!--Reset Password View Controller-->
+        <scene sceneID="L5F-Uf-nBa">
+            <objects>
+                <viewController id="7Lk-EZ-FK3" customClass="ResetPasswordViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L6E-3Q-UQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ovK-yP-GTC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4yO-53-DId">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Qt-cL-sJu">
+                                <rect key="frame" x="52" y="138" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HUD-9E-dMD"/>
+                                    <constraint firstAttribute="width" constant="172" id="mt6-B6-ZU5"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneNumber" translatesAutoresizingMaskIntoConstraints="NO" id="Ppj-Dc-kxK">
+                                <rect key="frame" x="52" y="138" width="216" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="duI-L7-rpa"/>
+                                    <constraint firstAttribute="width" constant="216" id="euB-WP-0Y6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTp-qw-Br8">
+                                <rect key="frame" x="52" y="258" width="216" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="MLh-bG-n5v"/>
+                                    <constraint firstAttribute="height" constant="52" id="Z5L-KF-kIS"/>
+                                </constraints>
+                                <state key="normal" image="ActivetButton"/>
+                                <connections>
+                                    <action selector="ResetPasswordButton:" destination="7Lk-EZ-FK3" eventType="touchUpInside" id="7Wh-0t-8ge"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ppj-Dc-kxK" firstAttribute="centerX" secondItem="4yO-53-DId" secondAttribute="centerX" id="2fv-xl-Li0"/>
+                            <constraint firstItem="wTp-qw-Br8" firstAttribute="centerX" secondItem="4yO-53-DId" secondAttribute="centerX" id="7pP-37-UJX"/>
+                            <constraint firstItem="Ppj-Dc-kxK" firstAttribute="top" secondItem="L6E-3Q-UQn" secondAttribute="bottom" constant="74" id="Ud3-hP-KFo"/>
+                            <constraint firstItem="Ppj-Dc-kxK" firstAttribute="leading" secondItem="6Qt-cL-sJu" secondAttribute="trailing" constant="-172" id="XXF-33-tsY"/>
+                            <constraint firstItem="wTp-qw-Br8" firstAttribute="centerY" secondItem="4yO-53-DId" secondAttribute="centerY" id="l2d-jm-EK8"/>
+                            <constraint firstItem="6Qt-cL-sJu" firstAttribute="top" secondItem="Ppj-Dc-kxK" secondAttribute="top" id="zFD-DO-J0N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Htf-zh-t3a"/>
+                    <connections>
+                        <outlet property="phoneNumberTextField" destination="6Qt-cL-sJu" id="nXS-Ni-yLI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LK2-Kk-bQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3912" y="-1192"/>
         </scene>
         <!--Activate Code View Controller-->
         <scene sceneID="yV1-5X-xNv">
@@ -527,20 +591,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من فضلك ادخل كود التفعيل: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr0-kh-6tv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="من فضلك ادخل كود التفعيل: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kr0-kh-6tv">
                                 <rect key="frame" x="61" y="106" width="199" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CodeField" translatesAutoresizingMaskIntoConstraints="NO" id="tfa-gf-nsf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CodeField" translatesAutoresizingMaskIntoConstraints="NO" id="tfa-gf-nsf">
                                 <rect key="frame" x="52" y="186" width="216" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="CDg-ED-SDa"/>
                                     <constraint firstAttribute="width" constant="216" id="L1I-nC-jgu"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOE-yA-pOQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOE-yA-pOQ">
                                 <rect key="frame" x="52" y="186" width="172" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Pc6-2c-yO8"/>
@@ -550,7 +614,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHR-KW-qV5">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHR-KW-qV5">
                                 <rect key="frame" x="52" y="256" width="216" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="216" id="8Ae-eZ-Nso"/>
@@ -559,7 +623,6 @@
                                 <state key="normal" image="ActivetButton"/>
                                 <connections>
                                     <action selector="ActivateButton:" destination="H2z-hw-C86" eventType="touchUpInside" id="hnp-eX-cYS"/>
-                                    <segue destination="ngW-z0-xYX" kind="push" id="DkF-5H-gzl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -578,6 +641,7 @@
                     <navigationItem key="navigationItem" id="9dE-PY-rY2"/>
                     <connections>
                         <outlet property="ActivateCodeTextField" destination="xOE-yA-pOQ" id="Vfr-cv-Do5"/>
+                        <segue destination="ngW-z0-xYX" kind="push" identifier="CompleteActiveCodeSegue" id="9vQ-dx-MCe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q9e-hF-0Rn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -636,7 +700,7 @@
         <!--حسابي-->
         <scene sceneID="Vm7-V9-fTX">
             <objects>
-                <viewController id="S5H-f9-yhf" sceneMemberID="viewController">
+                <viewController id="S5H-f9-yhf" customClass="MyAccountViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zsq-Qz-Ai0"/>
                         <viewControllerLayoutGuide type="bottom" id="Jl3-hE-Sdk"/>
@@ -667,6 +731,7 @@
                                 <rect key="frame" x="0.0" y="279" width="160" height="120"/>
                                 <state key="normal" image="AccComplete"/>
                                 <connections>
+                                    <action selector="ActivateButton:" destination="S5H-f9-yhf" eventType="touchUpInside" id="o9W-a6-qoW"/>
                                     <segue destination="H2z-hw-C86" kind="push" id="7Kz-pU-MNV"/>
                                 </connections>
                             </button>
@@ -681,6 +746,7 @@
                                 <rect key="frame" x="160" y="279" width="160" height="120"/>
                                 <state key="normal" image="AccRequest"/>
                                 <connections>
+                                    <action selector="RequestButton:" destination="S5H-f9-yhf" eventType="touchUpInside" id="J9A-BP-d6S"/>
                                     <segue destination="IcD-sj-L4m" kind="push" id="QAP-ws-36s"/>
                                 </connections>
                             </button>
@@ -688,7 +754,7 @@
                                 <rect key="frame" x="160" y="399" width="160" height="120"/>
                                 <state key="normal" image="AccPass"/>
                                 <connections>
-                                    <segue destination="pa0-aJ-X0u" kind="push" id="0Kf-lP-ocs"/>
+                                    <action selector="ChangePasswordButton:" destination="S5H-f9-yhf" eventType="touchUpInside" id="Fjw-12-QrA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ينتهي الاشتراك في" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srG-Mv-Vk7">
@@ -712,6 +778,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="حسابي" image="about" id="DYQ-XX-rub"/>
+                    <connections>
+                        <segue destination="pa0-aJ-X0u" kind="push" identifier="ChangePasswordSegue" id="JnZ-fI-i38"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad7-c7-yUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1082,10 +1151,8 @@
         <image name="RectangleLogo" width="255" height="119"/>
         <image name="SendMoney" width="246" height="52"/>
         <image name="about" width="25" height="25"/>
-        <image name="backButton" width="17" height="16"/>
         <image name="grayStar" width="12" height="11"/>
         <image name="greenDot" width="7" height="7"/>
-        <image name="logoButton" width="21" height="26"/>
         <image name="manFriend" width="249" height="34"/>
         <image name="password" width="213" height="27"/>
         <image name="phoneNumber" width="213" height="27"/>
@@ -1094,9 +1161,8 @@
         <image name="videoTwo" width="329" height="194"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DkF-5H-gzl"/>
-        <segue reference="Rzh-T4-lVy"/>
+        <segue reference="BF9-yV-lsX"/>
         <segue reference="6SI-cg-Nkg"/>
-        <segue reference="pyC-ex-IwW"/>
+        <segue reference="7Kz-pU-MNV"/>
     </inferredMetricsTieBreakers>
 </document>
