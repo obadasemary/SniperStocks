@@ -26,6 +26,7 @@
 		AFFD2F1B1D5F551B00372742 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F1A1D5F551B00372742 /* ResetPasswordViewController.swift */; };
 		AFFD2F1D1D5F694000372742 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F1C1D5F694000372742 /* MyAccountViewController.swift */; };
 		AFFD2F1F1D5F695100372742 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F1E1D5F695100372742 /* ChangePasswordViewController.swift */; };
+		AFFD2F211D61387700372742 /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F201D61387600372742 /* SendMoneyViewController.swift */; };
 		AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		AFFD2F1A1D5F551B00372742 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		AFFD2F1C1D5F694000372742 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		AFFD2F1E1D5F695100372742 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		AFFD2F201D61387600372742 /* SendMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
 		AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SniperStocksConstants.swift; sourceTree = "<group>"; };
 		C71912CAF95DA5776D225992 /* Pods-SniperStocksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocksUITests/Pods-SniperStocksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA94A0931C3B393564FE267B /* Pods_SniperStocksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +225,7 @@
 				AFFD2F1A1D5F551B00372742 /* ResetPasswordViewController.swift */,
 				AFFD2F1C1D5F694000372742 /* MyAccountViewController.swift */,
 				AFFD2F1E1D5F695100372742 /* ChangePasswordViewController.swift */,
+				AFFD2F201D61387600372742 /* SendMoneyViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
 				AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */,
 				AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */,
+				AFFD2F211D61387700372742 /* SendMoneyViewController.swift in Sources */,
 				AF286BFD1D5217C9003B91BE /* LoginViewController.swift in Sources */,
 				AFFD2F1D1D5F694000372742 /* MyAccountViewController.swift in Sources */,
 				AF106BB51D0D571F0053130C /* AppDelegate.swift in Sources */,

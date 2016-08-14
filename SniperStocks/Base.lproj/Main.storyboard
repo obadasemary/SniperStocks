@@ -963,10 +963,10 @@
             </objects>
             <point key="canvasLocation" x="5915" y="-165"/>
         </scene>
-        <!--View Controller-->
+        <!--Send Money View Controller-->
         <scene sceneID="Fcb-mO-1YI">
             <objects>
-                <viewController id="IcD-sj-L4m" sceneMemberID="viewController">
+                <viewController id="IcD-sj-L4m" customClass="SendMoneyViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3iW-2b-a4u"/>
                         <viewControllerLayoutGuide type="bottom" id="OCO-Yy-1Ze"/>
@@ -1036,13 +1036,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="light" secureTextEntry="YES"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="manFriend" translatesAutoresizingMaskIntoConstraints="NO" id="Ycb-aA-cdL">
-                                <rect key="frame" x="52" y="281" width="216" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="4o4-rJ-ZSF"/>
-                                    <constraint firstAttribute="height" constant="40" id="4zU-mJ-DUx"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK7-xf-lPC">
                                 <rect key="frame" x="52" y="407" width="216" height="60"/>
                                 <constraints>
@@ -1050,7 +1043,17 @@
                                     <constraint firstAttribute="height" constant="60" id="jdf-KC-zmN"/>
                                 </constraints>
                                 <state key="normal" image="SendMoney"/>
+                                <connections>
+                                    <action selector="SendMoneyButton:" destination="IcD-sj-L4m" eventType="touchUpInside" id="hYO-J6-gf5"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="manFriend" translatesAutoresizingMaskIntoConstraints="NO" id="Ycb-aA-cdL">
+                                <rect key="frame" x="52" y="281" width="216" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="4o4-rJ-ZSF"/>
+                                    <constraint firstAttribute="height" constant="40" id="4zU-mJ-DUx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1075,6 +1078,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dzv-n3-nxa"/>
+                    <connections>
+                        <outlet property="BankNameTextField" destination="oiD-GM-M0b" id="0CF-NH-2D5"/>
+                        <outlet property="passwordTextField" destination="9AT-mv-Jh6" id="8Kj-eS-uad"/>
+                        <outlet property="phoneNumberTextField" destination="v9w-et-lBB" id="wef-r9-4Ug"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XtF-0T-NEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

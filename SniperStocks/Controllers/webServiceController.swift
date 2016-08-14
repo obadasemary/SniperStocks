@@ -22,6 +22,7 @@ class webServiceController: NSObject {
     var _userIsActive = ""
     var _userDateRegister = ""
     var _userDateActive = ""
+    var _bankName = ""
 
     var resultArray:NSDictionary = NSDictionary()
     var webServiceProtocol: WebServiceProtocol?
