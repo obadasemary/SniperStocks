@@ -735,13 +735,6 @@
                                     <segue destination="H2z-hw-C86" kind="push" id="7Kz-pU-MNV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdF-j4-Ill">
-                                <rect key="frame" x="0.0" y="399" width="160" height="120"/>
-                                <state key="normal" image="AccInfo"/>
-                                <connections>
-                                    <segue destination="KR4-1U-SVZ" kind="push" id="VXx-hx-ghu"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAe-dY-J7V">
                                 <rect key="frame" x="160" y="279" width="160" height="120"/>
                                 <state key="normal" image="AccRequest"/>
@@ -766,6 +759,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdF-j4-Ill">
+                                <rect key="frame" x="0.0" y="399" width="160" height="120"/>
+                                <state key="normal" image="AccInfo"/>
+                                <connections>
+                                    <segue destination="KR4-1U-SVZ" kind="push" id="VXx-hx-ghu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -777,7 +777,7 @@
                             <constraint firstItem="wo9-T7-WFG" firstAttribute="top" secondItem="Zsq-Qz-Ai0" secondAttribute="bottom" constant="159" id="dGP-sS-Ju0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="حسابي" image="about" id="DYQ-XX-rub"/>
+                    <tabBarItem key="tabBarItem" title="حسابي" image="myAccount" selectedImage="myAccount" id="DYQ-XX-rub"/>
                     <connections>
                         <segue destination="pa0-aJ-X0u" kind="push" identifier="ChangePasswordSegue" id="JnZ-fI-i38"/>
                     </connections>
@@ -1162,6 +1162,7 @@
         <image name="grayStar" width="12" height="11"/>
         <image name="greenDot" width="7" height="7"/>
         <image name="manFriend" width="249" height="34"/>
+        <image name="myAccount" width="25" height="25"/>
         <image name="password" width="213" height="27"/>
         <image name="phoneNumber" width="213" height="27"/>
         <image name="username" width="213" height="28"/>
