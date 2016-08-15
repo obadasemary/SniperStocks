@@ -777,7 +777,7 @@
                             <constraint firstItem="wo9-T7-WFG" firstAttribute="top" secondItem="Zsq-Qz-Ai0" secondAttribute="bottom" constant="159" id="dGP-sS-Ju0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="حسابي" image="myAccount" selectedImage="myAccount" id="DYQ-XX-rub"/>
+                    <tabBarItem key="tabBarItem" title="حسابي" image="myAccount" id="DYQ-XX-rub"/>
                     <connections>
                         <segue destination="pa0-aJ-X0u" kind="push" identifier="ChangePasswordSegue" id="JnZ-fI-i38"/>
                     </connections>
