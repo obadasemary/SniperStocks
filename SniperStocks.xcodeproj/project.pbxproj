@@ -20,7 +20,9 @@
 		AF106BD51D0D57210053130C /* SniperStocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BD41D0D57210053130C /* SniperStocksUITests.swift */; };
 		AF270C471D4DF3A5001E1DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF270C461D4DF3A5001E1DBE /* ViewController.swift */; };
 		AF286BFD1D5217C9003B91BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF286BFC1D5217C9003B91BE /* LoginViewController.swift */; };
-		AF560E311D62887E00B2FB57 /* InstractionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF560E301D62887E00B2FB57 /* InstractionTableViewController.swift */; };
+		AF560E331D633D8600B2FB57 /* InstractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF560E321D633D8600B2FB57 /* InstractionViewController.swift */; };
+		AF560E351D635CA500B2FB57 /* InstractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF560E341D635CA500B2FB57 /* InstractionTableViewCell.swift */; };
+		AF560E371D63613400B2FB57 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF560E361D63613400B2FB57 /* Company.swift */; };
 		AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BD1D462DB700E11C31 /* MainViewController.swift */; };
 		AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */; };
 		AFFD2F191D5BD9A800372742 /* ActivateCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F181D5BD9A800372742 /* ActivateCodeViewController.swift */; };
@@ -71,7 +73,9 @@
 		AF106BD61D0D57210053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF270C461D4DF3A5001E1DBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF286BFC1D5217C9003B91BE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AF560E301D62887E00B2FB57 /* InstractionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstractionTableViewController.swift; sourceTree = "<group>"; };
+		AF560E321D633D8600B2FB57 /* InstractionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstractionViewController.swift; sourceTree = "<group>"; };
+		AF560E341D635CA500B2FB57 /* InstractionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstractionTableViewCell.swift; sourceTree = "<group>"; };
+		AF560E361D63613400B2FB57 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = SniperStocks/Company.swift; sourceTree = SOURCE_ROOT; };
 		AFC830BD1D462DB700E11C31 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AFFD2F181D5BD9A800372742 /* ActivateCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivateCodeViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 		41EE491A1D1AFF04008A51B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AF560E361D63613400B2FB57 /* Company.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,7 +233,8 @@
 				AFFD2F1C1D5F694000372742 /* MyAccountViewController.swift */,
 				AFFD2F1E1D5F695100372742 /* ChangePasswordViewController.swift */,
 				AFFD2F201D61387600372742 /* SendMoneyViewController.swift */,
-				AF560E301D62887E00B2FB57 /* InstractionTableViewController.swift */,
+				AF560E321D633D8600B2FB57 /* InstractionViewController.swift */,
+				AF560E341D635CA500B2FB57 /* InstractionTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -498,10 +504,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF560E311D62887E00B2FB57 /* InstractionTableViewController.swift in Sources */,
 				AF270C471D4DF3A5001E1DBE /* ViewController.swift in Sources */,
+				AF560E351D635CA500B2FB57 /* InstractionTableViewCell.swift in Sources */,
 				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
 				AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */,
+				AF560E331D633D8600B2FB57 /* InstractionViewController.swift in Sources */,
 				AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */,
 				AFFD2F211D61387700372742 /* SendMoneyViewController.swift in Sources */,
 				AF286BFD1D5217C9003B91BE /* LoginViewController.swift in Sources */,
@@ -512,6 +519,7 @@
 				AFFD2F1F1D5F695100372742 /* ChangePasswordViewController.swift in Sources */,
 				AFFD2F191D5BD9A800372742 /* ActivateCodeViewController.swift in Sources */,
 				AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */,
+				AF560E371D63613400B2FB57 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

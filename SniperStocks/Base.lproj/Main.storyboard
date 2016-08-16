@@ -829,7 +829,7 @@
         <!--الشروحات-->
         <scene sceneID="PEJ-Nd-iHr">
             <objects>
-                <viewController id="yjs-bc-BNA" customClass="InstractionTableViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yjs-bc-BNA" customClass="InstractionViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FWc-Vn-Qzh"/>
                         <viewControllerLayoutGuide type="bottom" id="QUh-pS-orR"/>
@@ -945,6 +945,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="Appreciation" destination="kTj-1K-9Cs" id="8Qa-Tt-8Qz"/>
+                                            <outlet property="Case" destination="VTh-Rc-Y2l" id="vBi-WB-tAY"/>
+                                            <outlet property="Company" destination="FDE-LE-UUb" id="Cr6-Tk-xfp"/>
+                                            <outlet property="Power" destination="lfZ-jL-db8" id="KFm-Jt-hRU"/>
+                                            <outlet property="Start" destination="Or6-dd-uLV" id="C3P-S5-YLL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -958,6 +965,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="الشروحات" image="instraction" id="erh-vX-nZe"/>
+                    <connections>
+                        <outlet property="companyTableView" destination="P9x-we-P5q" id="Dwp-h3-NpZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEE-ec-Pyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1161,7 +1171,7 @@
         <image name="SendMoney" width="246" height="52"/>
         <image name="aboutApp" width="20" height="26"/>
         <image name="grayStar" width="12" height="11"/>
-        <image name="greenDot" width="7" height="7"/>
+        <image name="greenDot" width="24" height="24"/>
         <image name="instraction" width="25" height="25"/>
         <image name="manFriend" width="249" height="34"/>
         <image name="myAccount" width="25" height="25"/>
