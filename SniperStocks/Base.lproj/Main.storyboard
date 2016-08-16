@@ -691,7 +691,7 @@
                             <constraint firstItem="3SW-Aa-cGD" firstAttribute="top" secondItem="Yja-MC-cnA" secondAttribute="bottom" constant="305" id="nGU-rQ-D2P"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="حول التطبيق" image="about" id="LTq-UG-56w"/>
+                    <tabBarItem key="tabBarItem" title="حول التطبيق" image="aboutApp" id="LTq-UG-56w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdI-as-66r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -820,7 +820,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="الدعم الفني" image="about" id="Vcn-sk-6dg"/>
+                    <tabBarItem key="tabBarItem" title="الدعم الفني" image="Da3m" id="Vcn-sk-6dg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdt-Lx-7fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -829,7 +829,7 @@
         <!--الشروحات-->
         <scene sceneID="PEJ-Nd-iHr">
             <objects>
-                <viewController id="yjs-bc-BNA" sceneMemberID="viewController">
+                <viewController id="yjs-bc-BNA" customClass="InstractionTableViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FWc-Vn-Qzh"/>
                         <viewControllerLayoutGuide type="bottom" id="QUh-pS-orR"/>
@@ -842,7 +842,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="8WG-82-nfp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleCell" rowHeight="50" id="8WG-82-nfp">
                                         <rect key="frame" x="0.0" y="92" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8WG-82-nfp" id="kvN-cC-DGH">
@@ -880,7 +880,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="Iaq-lT-mRj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompanyCell" rowHeight="63" id="Iaq-lT-mRj">
                                         <rect key="frame" x="0.0" y="142" width="320" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iaq-lT-mRj" id="HO5-uM-S6x">
@@ -957,7 +957,7 @@
                             <constraint firstAttribute="trailing" secondItem="P9x-we-P5q" secondAttribute="trailing" id="F3b-tJ-7gM"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="الشروحات" image="about" id="erh-vX-nZe"/>
+                    <tabBarItem key="tabBarItem" title="الشروحات" image="instraction" id="erh-vX-nZe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEE-ec-Pyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1153,14 +1153,16 @@
         <image name="Background" width="375" height="664"/>
         <image name="BankFeild" width="249" height="30"/>
         <image name="CodeField" width="249" height="31"/>
+        <image name="Da3m" width="19" height="25"/>
         <image name="Login" width="198" height="52"/>
         <image name="LoginButton" width="246" height="52"/>
         <image name="LoginRegistButton" width="246" height="52"/>
         <image name="RectangleLogo" width="255" height="119"/>
         <image name="SendMoney" width="246" height="52"/>
-        <image name="about" width="25" height="25"/>
+        <image name="aboutApp" width="20" height="26"/>
         <image name="grayStar" width="12" height="11"/>
         <image name="greenDot" width="7" height="7"/>
+        <image name="instraction" width="25" height="25"/>
         <image name="manFriend" width="249" height="34"/>
         <image name="myAccount" width="25" height="25"/>
         <image name="password" width="213" height="27"/>

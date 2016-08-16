@@ -20,6 +20,7 @@
 		AF106BD51D0D57210053130C /* SniperStocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF106BD41D0D57210053130C /* SniperStocksUITests.swift */; };
 		AF270C471D4DF3A5001E1DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF270C461D4DF3A5001E1DBE /* ViewController.swift */; };
 		AF286BFD1D5217C9003B91BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF286BFC1D5217C9003B91BE /* LoginViewController.swift */; };
+		AF560E311D62887E00B2FB57 /* InstractionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF560E301D62887E00B2FB57 /* InstractionTableViewController.swift */; };
 		AFC830BE1D462DB700E11C31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BD1D462DB700E11C31 /* MainViewController.swift */; };
 		AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */; };
 		AFFD2F191D5BD9A800372742 /* ActivateCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F181D5BD9A800372742 /* ActivateCodeViewController.swift */; };
@@ -70,6 +71,7 @@
 		AF106BD61D0D57210053130C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF270C461D4DF3A5001E1DBE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF286BFC1D5217C9003B91BE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AF560E301D62887E00B2FB57 /* InstractionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstractionTableViewController.swift; sourceTree = "<group>"; };
 		AFC830BD1D462DB700E11C31 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AFC830BF1D462E0E00E11C31 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AFFD2F181D5BD9A800372742 /* ActivateCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivateCodeViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				AFFD2F1C1D5F694000372742 /* MyAccountViewController.swift */,
 				AFFD2F1E1D5F695100372742 /* ChangePasswordViewController.swift */,
 				AFFD2F201D61387600372742 /* SendMoneyViewController.swift */,
+				AF560E301D62887E00B2FB57 /* InstractionTableViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF560E311D62887E00B2FB57 /* InstractionTableViewController.swift in Sources */,
 				AF270C471D4DF3A5001E1DBE /* ViewController.swift in Sources */,
 				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
 				AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */,
