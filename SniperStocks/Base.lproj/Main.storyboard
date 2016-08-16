@@ -829,7 +829,7 @@
         <!--الشروحات-->
         <scene sceneID="PEJ-Nd-iHr">
             <objects>
-                <viewController id="yjs-bc-BNA" customClass="InstractionTableViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yjs-bc-BNA" customClass="InstractionViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FWc-Vn-Qzh"/>
                         <viewControllerLayoutGuide type="bottom" id="QUh-pS-orR"/>
@@ -842,46 +842,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleCell" rowHeight="50" id="8WG-82-nfp">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8WG-82-nfp" id="kvN-cC-DGH">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="re7-e5-kVU">
-                                                    <rect key="frame" x="287" y="8" width="25" height="30"/>
-                                                    <state key="normal" image="grayStar"/>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الشركة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2T-aI-K0p">
-                                                    <rect key="frame" x="201" y="8" width="80" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="التقدير المئوي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlo-qQ-Mjr">
-                                                    <rect key="frame" x="8" y="8" width="80" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="القوة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvo-7D-OoR">
-                                                    <rect key="frame" x="96" y="12" width="27" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الحالة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fb-Q6-rJJ">
-                                                    <rect key="frame" x="131" y="8" width="80" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompanyCell" rowHeight="63" id="Iaq-lT-mRj">
-                                        <rect key="frame" x="0.0" y="142" width="320" height="63"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompanyCell" rowHeight="63" id="Iaq-lT-mRj" customClass="InstractionTableViewCell" customModule="SniperStocks" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iaq-lT-mRj" id="HO5-uM-S6x">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
@@ -945,6 +907,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="Appreciation" destination="kTj-1K-9Cs" id="8Qa-Tt-8Qz"/>
+                                            <outlet property="Case" destination="VTh-Rc-Y2l" id="vBi-WB-tAY"/>
+                                            <outlet property="Company" destination="FDE-LE-UUb" id="Cr6-Tk-xfp"/>
+                                            <outlet property="Power" destination="lfZ-jL-db8" id="KFm-Jt-hRU"/>
+                                            <outlet property="Start" destination="Or6-dd-uLV" id="C3P-S5-YLL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -958,6 +927,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="الشروحات" image="instraction" id="erh-vX-nZe"/>
+                    <connections>
+                        <outlet property="companyTableView" destination="P9x-we-P5q" id="Dwp-h3-NpZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEE-ec-Pyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1161,7 +1133,7 @@
         <image name="SendMoney" width="246" height="52"/>
         <image name="aboutApp" width="20" height="26"/>
         <image name="grayStar" width="12" height="11"/>
-        <image name="greenDot" width="7" height="7"/>
+        <image name="greenDot" width="24" height="24"/>
         <image name="instraction" width="25" height="25"/>
         <image name="manFriend" width="249" height="34"/>
         <image name="myAccount" width="25" height="25"/>
