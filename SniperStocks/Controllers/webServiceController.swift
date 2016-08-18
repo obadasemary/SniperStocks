@@ -150,7 +150,10 @@ class webServiceController: NSObject {
                 
                 if let result = response.result.value
                 {
-                    self.webServiceProtocol?.onGetAllCompanySuccess!(result as! NSDictionary)
+                    
+                    let company = result["company"] as! NSDictionary
+                    
+                    self.webServiceProtocol?.onGetAllCompanySuccess!(company)
                 }
             }
     }
