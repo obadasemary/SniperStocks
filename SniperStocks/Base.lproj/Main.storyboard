@@ -790,7 +790,14 @@
         <scene sceneID="DRe-RU-vRT">
             <objects>
                 <tabBarController id="ngW-z0-xYX" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="4NR-yb-cUk"/>
+                    <navigationItem key="navigationItem" id="4NR-yb-cUk">
+                        <barButtonItem key="leftBarButtonItem" image="backButton" id="Y0k-Ue-UEU">
+                            <color key="tintColor" red="1" green="0.42264894240000001" blue="0.001131755526" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="logoButton" id="4tI-hN-mVT">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Z98-DF-AMl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1170,9 +1177,11 @@
         <image name="RectangleLogo" width="255" height="119"/>
         <image name="SendMoney" width="246" height="52"/>
         <image name="aboutApp" width="20" height="26"/>
+        <image name="backButton" width="23" height="23"/>
         <image name="grayStar" width="12" height="11"/>
         <image name="greenDot" width="24" height="24"/>
         <image name="instraction" width="25" height="25"/>
+        <image name="logoButton" width="30" height="36"/>
         <image name="manFriend" width="249" height="34"/>
         <image name="myAccount" width="25" height="25"/>
         <image name="password" width="213" height="27"/>

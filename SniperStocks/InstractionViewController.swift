@@ -13,6 +13,8 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
     @IBOutlet weak var companyTableView: UITableView!
     
     var wSC = webServiceController()
+    var companysArray = [Company]()
+    
     
     
     override func viewDidLoad() {
@@ -24,14 +26,29 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 0
+        return self.companysArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let tableViewCell = self.companyTableView.dequeueReusableCellWithIdentifier("CompanyCell", forIndexPath: indexPath) as! InstractionTableViewCell
         
+        tableViewCell.Company.text = companysArray[indexPath.row].comp_name
+//        tableViewCell.Case
+        tableViewCell.Power.text = companysArray[indexPath.row].comp_power
+//        tableViewCell.Appreciation.progress = companysArray[indexPath.row].comp_degre
+        
+        
+        
+        
         return tableViewCell
     }
     
+    func onGetAllCompanySuccess(result: NSDictionary) {
+        
+        dispatch_async(dispatch_get_main_queue()) { 
+            
+            self.companysArray
+        }
+    }
 }
