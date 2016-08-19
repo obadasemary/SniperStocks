@@ -12,6 +12,7 @@ import Alamofire
 class webServiceController: NSObject {
     
     let BaseURL = "http://snniper.com/api/service.php"
+    
     var _parseID = ""
     var _userCode = ""
     var _userID = ""

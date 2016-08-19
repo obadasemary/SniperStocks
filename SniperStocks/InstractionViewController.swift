@@ -19,9 +19,14 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         wSC = webServiceController.sharedInstance()
         wSC.webServiceProtocol = self
+        
+        wSC.getAllCompany(wSC._userName, userSession: wSC._userSession)
+        
+        
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,6 +53,7 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
         
         dispatch_async(dispatch_get_main_queue()) { 
             
+//            self.companyTableView = 
             self.companysArray
         }
     }

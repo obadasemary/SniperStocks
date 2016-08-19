@@ -72,6 +72,5 @@ class LoginViewController: UIViewController, WebServiceProtocol {
         
         
         performSegueWithIdentifier("LoginSegue", sender: self)
-        
     }
 }
