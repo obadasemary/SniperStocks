@@ -628,12 +628,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Kr0-kh-6tv" firstAttribute="top" secondItem="hey-ZI-j4n" secondAttribute="bottom" constant="86" id="530-EX-h97"/>
                             <constraint firstItem="tfa-gf-nsf" firstAttribute="leading" secondItem="xOE-yA-pOQ" secondAttribute="trailing" constant="-172" id="7Xu-pv-IDd"/>
                             <constraint firstItem="JHR-KW-qV5" firstAttribute="centerX" secondItem="v8c-6r-IDl" secondAttribute="centerX" id="AD9-vA-sE1"/>
                             <constraint firstItem="xOE-yA-pOQ" firstAttribute="top" secondItem="tfa-gf-nsf" secondAttribute="top" id="Dqa-Na-tWy"/>
-                            <constraint firstItem="JHR-KW-qV5" firstAttribute="top" secondItem="hey-ZI-j4n" secondAttribute="bottom" constant="236" id="NhL-vU-Kmc"/>
-                            <constraint firstItem="tfa-gf-nsf" firstAttribute="top" secondItem="hey-ZI-j4n" secondAttribute="bottom" constant="166" id="aLQ-bH-MsP"/>
+                            <constraint firstItem="Kr0-kh-6tv" firstAttribute="top" secondItem="hey-ZI-j4n" secondAttribute="bottom" constant="86" id="PtE-KK-YYW"/>
+                            <constraint firstItem="tfa-gf-nsf" firstAttribute="top" secondItem="hey-ZI-j4n" secondAttribute="bottom" constant="166" id="QZx-w5-Buu"/>
+                            <constraint firstItem="JHR-KW-qV5" firstAttribute="top" secondItem="hey-ZI-j4n" secondAttribute="bottom" constant="236" id="ROs-Pt-xbt"/>
                             <constraint firstItem="Kr0-kh-6tv" firstAttribute="centerX" secondItem="v8c-6r-IDl" secondAttribute="centerX" id="kra-kx-PrP"/>
                             <constraint firstItem="tfa-gf-nsf" firstAttribute="centerX" secondItem="v8c-6r-IDl" secondAttribute="centerX" id="kvS-ig-bbf"/>
                         </constraints>
@@ -697,6 +697,75 @@
             </objects>
             <point key="canvasLocation" x="5484" y="612"/>
         </scene>
+        <!--Update Code View Controller-->
+        <scene sceneID="OLJ-ov-VEv">
+            <objects>
+                <viewController id="W6a-vZ-Gf9" customClass="UpdateCodeViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AC9-LS-SHX"/>
+                        <viewControllerLayoutGuide type="bottom" id="hUa-I4-jSj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cHO-ch-cyC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="من فضلك ادخل كود التفعيل: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SV3-by-mLW">
+                                <rect key="frame" x="61" y="164" width="199" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CodeField" translatesAutoresizingMaskIntoConstraints="NO" id="IkL-td-Iym">
+                                <rect key="frame" x="52" y="244" width="216" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="MX8-gB-Ajg"/>
+                                    <constraint firstAttribute="height" constant="40" id="vYT-gy-OD1"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDH-JB-4jg">
+                                <rect key="frame" x="52" y="244" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="UHS-g0-07f"/>
+                                    <constraint firstAttribute="height" constant="30" id="r7b-E2-WUF"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXg-Lh-5hU">
+                                <rect key="frame" x="52" y="331" width="216" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="idC-fh-Jm6"/>
+                                    <constraint firstAttribute="width" constant="216" id="wRj-zo-8Lp"/>
+                                </constraints>
+                                <state key="normal" image="ActivetButton"/>
+                                <connections>
+                                    <action selector="ActivateButton:" destination="H2z-hw-C86" eventType="touchUpInside" id="a1V-n7-cxn"/>
+                                    <action selector="updateCodebutton:" destination="W6a-vZ-Gf9" eventType="touchUpInside" id="zQg-xm-tDl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="SV3-by-mLW" firstAttribute="top" secondItem="AC9-LS-SHX" secondAttribute="bottom" constant="100" id="96s-LF-9iK"/>
+                            <constraint firstItem="WDH-JB-4jg" firstAttribute="top" secondItem="IkL-td-Iym" secondAttribute="top" id="Omo-kb-P9S"/>
+                            <constraint firstItem="TXg-Lh-5hU" firstAttribute="centerX" secondItem="cHO-ch-cyC" secondAttribute="centerX" id="P4X-Yh-kzF"/>
+                            <constraint firstItem="TXg-Lh-5hU" firstAttribute="top" secondItem="AC9-LS-SHX" secondAttribute="bottom" constant="267" id="Vom-gQ-71l"/>
+                            <constraint firstItem="IkL-td-Iym" firstAttribute="top" secondItem="AC9-LS-SHX" secondAttribute="bottom" constant="180" id="cRd-gC-maD"/>
+                            <constraint firstItem="SV3-by-mLW" firstAttribute="centerX" secondItem="cHO-ch-cyC" secondAttribute="centerX" id="iEe-aI-hic"/>
+                            <constraint firstItem="IkL-td-Iym" firstAttribute="leading" secondItem="WDH-JB-4jg" secondAttribute="trailing" constant="-172" id="veT-KL-XMV"/>
+                            <constraint firstItem="IkL-td-Iym" firstAttribute="centerX" secondItem="cHO-ch-cyC" secondAttribute="centerX" id="yGA-o2-dTM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z1U-rO-ytn"/>
+                    <connections>
+                        <outlet property="CodeTextField" destination="WDH-JB-4jg" id="eMu-80-cT4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R1I-XH-wi7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5490" y="-1472"/>
+        </scene>
         <!--حسابي-->
         <scene sceneID="Vm7-V9-fTX">
             <objects>
@@ -732,7 +801,7 @@
                                 <state key="normal" image="AccComplete"/>
                                 <connections>
                                     <action selector="ActivateButton:" destination="S5H-f9-yhf" eventType="touchUpInside" id="o9W-a6-qoW"/>
-                                    <segue destination="H2z-hw-C86" kind="push" id="7Kz-pU-MNV"/>
+                                    <segue destination="W6a-vZ-Gf9" kind="push" id="LfE-zI-kqf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAe-dY-J7V">
@@ -1191,8 +1260,7 @@
         <image name="videoTwo" width="329" height="194"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BF9-yV-lsX"/>
+        <segue reference="9vQ-dx-MCe"/>
         <segue reference="6SI-cg-Nkg"/>
-        <segue reference="7Kz-pU-MNV"/>
     </inferredMetricsTieBreakers>
 </document>

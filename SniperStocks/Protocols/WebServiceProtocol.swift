@@ -21,4 +21,5 @@ import Foundation
     optional func onSayHello(result: NSDictionary)
     optional func onPwdRecover(result: NSDictionary)
     optional func onUpdateNotif(result: NSDictionary)
+    optional func onUpdateCode(result: NSDictionary)
 }

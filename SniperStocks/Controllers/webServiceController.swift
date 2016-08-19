@@ -303,8 +303,22 @@ class webServiceController: NSObject {
             }
         }
     }
-
     
+    // MARK: - Update Code
+    
+    func updateCode(userName: String, userSession: String, code: String) {
+        
+        let parameters = ["action": "update_code", "user_name": userName, "user_session": userSession, "code": code]
+        
+        Alamofire.request(.POST, BaseURL, parameters: parameters).responseJSON { (response) in
+            
+            if let result = response.result.value {
+                
+                self.webServiceProtocol?.onUpdateCode!(result as! NSDictionary)
+            }
+        }
+    }
+
     // MARK: - Shared Instance
     
     class func sharedInstance() -> webServiceController {
