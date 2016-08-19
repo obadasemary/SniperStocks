@@ -54,7 +54,7 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
         dispatch_async(dispatch_get_main_queue()) { 
             
 //            self.companyTableView = 
-            self.companysArray
+//            self.companysArray
         }
     }
 }
