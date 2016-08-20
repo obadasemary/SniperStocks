@@ -7,6 +7,7 @@ target 'SniperStocks' do
 
   # Pods for SniperStocks
   pod 'Alamofire', '~> 3.4'
+  pod 'NMPopUpViewSwift', '~> 3.0'
   target 'SniperStocksTests' do
     inherit! :search_paths
     # Pods for testing
