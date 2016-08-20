@@ -31,6 +31,7 @@
 		AFFD2F1F1D5F695100372742 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F1E1D5F695100372742 /* ChangePasswordViewController.swift */; };
 		AFFD2F211D61387700372742 /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD2F201D61387600372742 /* SendMoneyViewController.swift */; };
 		AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */; };
+		C3F2E5521D672FCD0004C7FC /* UpdateCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E5511D672FCD0004C7FC /* UpdateCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		AFFD2F1E1D5F695100372742 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		AFFD2F201D61387600372742 /* SendMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
 		AFFFA0331D4F507500C9793A /* SniperStocksConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SniperStocksConstants.swift; sourceTree = "<group>"; };
+		C3F2E5511D672FCD0004C7FC /* UpdateCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateCodeViewController.swift; sourceTree = "<group>"; };
 		C71912CAF95DA5776D225992 /* Pods-SniperStocksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SniperStocksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SniperStocksUITests/Pods-SniperStocksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA94A0931C3B393564FE267B /* Pods_SniperStocksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50BF1936C0704E79812DADA /* Pods_SniperStocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SniperStocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +237,7 @@
 				AFFD2F201D61387600372742 /* SendMoneyViewController.swift */,
 				AF560E321D633D8600B2FB57 /* InstractionViewController.swift */,
 				AF560E341D635CA500B2FB57 /* InstractionTableViewCell.swift */,
+				C3F2E5511D672FCD0004C7FC /* UpdateCodeViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -315,7 +318,7 @@
 				TargetAttributes = {
 					AF106BB01D0D571A0053130C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6KNM32Y4FM;
+						DevelopmentTeam = KM569NM77P;
 					};
 					AF106BC41D0D57210053130C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -507,6 +510,7 @@
 				AF270C471D4DF3A5001E1DBE /* ViewController.swift in Sources */,
 				AF560E351D635CA500B2FB57 /* InstractionTableViewCell.swift in Sources */,
 				4106F0DE1D42B07A00B780BA /* WebServiceProtocol.swift in Sources */,
+				C3F2E5521D672FCD0004C7FC /* UpdateCodeViewController.swift in Sources */,
 				AFC830C01D462E0E00E11C31 /* RegisterViewController.swift in Sources */,
 				AF560E331D633D8600B2FB57 /* InstractionViewController.swift in Sources */,
 				AFFFA0341D4F507500C9793A /* SniperStocksConstants.swift in Sources */,
@@ -664,10 +668,13 @@
 			baseConfigurationReference = A629D11AD536304E77E18D26 /* Pods-SniperStocks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SniperStocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -677,10 +684,13 @@
 			baseConfigurationReference = 5BB794EC8916F0EA73C3170F /* Pods-SniperStocks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SniperStocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

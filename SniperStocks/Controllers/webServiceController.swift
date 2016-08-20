@@ -12,6 +12,7 @@ import Alamofire
 class webServiceController: NSObject {
     
     let BaseURL = "http://snniper.com/api/service.php"
+    
     var _parseID = ""
     var _userCode = ""
     var _userID = ""
@@ -147,13 +148,39 @@ class webServiceController: NSObject {
         Alamofire.request(.POST, BaseURL, parameters: parameters)
             .responseJSON
             {   response in
-                
+                let companiesArray:NSMutableArray = NSMutableArray()
                 if let result = response.result.value
                 {
                     
-                    let company = result["company"] as! NSDictionary
+                    if (result["status"] as! String == "success")
+                    {
+                        let companiesResult = result["company"] as! NSArray
+                        for companyItem in companiesResult
+                        {
+                            let companyDictionary = companyItem as! NSDictionary
+                            let company:Company = Company()
+                            company.comp_id = companyDictionary["comp_id"] as! String
+                            company.comp_num = companyDictionary["comp_num"] as! String
+                            company.comp_name = companyDictionary["comp_name"] as! String
+                            company.comp_state = companyDictionary["comp_state"] as! String
+                            company.comp_power = companyDictionary["comp_power"] as! String
+                            company.comp_degre = companyDictionary["comp_degre"] as! String
+                            company.comp_uppos_max = companyDictionary["comp_uppos_max"] as! String
+                            company.comp_uppos_min = companyDictionary["comp_uppos_min"] as! String
+                            company.comp_downneg_max = companyDictionary["comp_downneg_max"] as! String
+                            company.comp_downneg_min = companyDictionary["comp_downneg_min"] as! String
+                            company.comp_inflation_rate = companyDictionary["comp_inflation_rate"] as! String
+                            company.comp_pivot_area_min = companyDictionary["comp_pivot_area_min"] as! String
+                            company.comp_pivot_area_max = companyDictionary["comp_pivot_area_max"] as! String
+                            company.IsNotif = companyDictionary["IsNotif"] as! String
+                            company.isTri = companyDictionary["isTri"] as! String
+                            company.notif_this_user = companyDictionary["notif_this_user"] as! String
+                            
+                            companiesArray.addObject(company)
+                        }
+                    }
                     
-                    self.webServiceProtocol?.onGetAllCompanySuccess!(company)
+                    self.webServiceProtocol?.onGetAllCompanySuccess!(companiesArray)
                 }
             }
     }
@@ -303,8 +330,22 @@ class webServiceController: NSObject {
             }
         }
     }
-
     
+    // MARK: - Update Code
+    
+    func updateCode(userName: String, userSession: String, code: String) {
+        
+        let parameters = ["action": "update_code", "user_name": userName, "user_session": userSession, "code": code]
+        
+        Alamofire.request(.POST, BaseURL, parameters: parameters).responseJSON { (response) in
+            
+            if let result = response.result.value {
+                
+                self.webServiceProtocol?.onUpdateCode!(result as! NSDictionary)
+            }
+        }
+    }
+
     // MARK: - Shared Instance
     
     class func sharedInstance() -> webServiceController {

@@ -11,7 +11,7 @@ import UIKit
 
 class Company {
     
-    var comp_id: Int = 0
+    var comp_id: String = ""
     var comp_num: String = ""
     var comp_name: String = ""
     var comp_state: String = ""
@@ -30,7 +30,7 @@ class Company {
 
     
     init () {
-        self.comp_id = 0
+        self.comp_id = ""
         self.comp_num = ""
         self.comp_name = ""
         self.comp_state = ""
