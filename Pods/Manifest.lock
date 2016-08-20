@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (3.4.1)
+  - NMPopUpViewSwift (3.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
+  - NMPopUpViewSwift (~> 3.0)
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  NMPopUpViewSwift: 23a44d6db17a9abc6b806f9fac597be6d7e9f300
 
-PODFILE CHECKSUM: 56999ab2f8822038eebf1e77ee32fcbf6bf52733
+PODFILE CHECKSUM: 1b10d86d27779e2a7f19fd3cf20fd404ca9b13f9
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.0.0
