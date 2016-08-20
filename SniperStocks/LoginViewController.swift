@@ -39,7 +39,8 @@ class LoginViewController: UIViewController, WebServiceProtocol {
         let username = usernameTextField.text
         wSC._userPassword = passwordTextField.text!
         
-        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
+//        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
+        wSC.login("obada", userPassword: "obada", parseID: "")
     }
 
     @IBAction func resetPassword(sender: AnyObject) {
