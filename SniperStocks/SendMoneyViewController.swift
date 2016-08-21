@@ -32,6 +32,40 @@ class SendMoneyViewController: UIViewController, WebServiceProtocol {
     
     @IBAction func SendMoneyButton(sender: AnyObject) {
         
+        let bankName = BankNameTextField.text
+        let password = passwordTextField.text
+        let phoneNumber = phoneNumberTextField.text
+        
+        if bankName == "" || password == "" || phoneNumber == "" {
+            
+            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
+        if password != wSC._userPassword {
+            
+            let alertController = UIAlertController(title: "Oops", message: "كلمه السر خطأ", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
+        if phoneNumber != wSC._userPhone {
+            
+            let alertController = UIAlertController(title: "Oops", message: "رقم الجوال خطا", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
         wSC._bankName = BankNameTextField.text!
         
         wSC.sendMoney(wSC._userName, userSession: wSC._userSession, bankName: wSC._bankName, userTelephone: wSC._userPhone, userPassword: wSC._userPassword)

@@ -47,9 +47,10 @@ class LoginViewController: UIViewController, WebServiceProtocol {
             self.presentViewController(alertController, animated: true, completion: nil)
             
             return
-        }
+        } else {
         
-        wSC._userPassword = password
+            wSC._userPassword = password
+        }
         
         wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
     }

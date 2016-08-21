@@ -28,7 +28,33 @@ class ChangePasswordViewController: UIViewController, WebServiceProtocol {
 
     @IBAction func ChangeButton(sender: AnyObject) {
         
-        wSC._userPassword = passwordTextField.text!
+        let password = passwordTextField.text
+        let cpassword = cPasswordTextField.text
+        
+        if password == "" || cpassword == "" {
+
+            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        } else {
+            
+            if password == cpassword {
+                
+                wSC._userPassword = password!
+                
+            } else {
+                
+                let alertController = UIAlertController(title: "Oops", message: "يجب ان تتطابق كلمتي السر", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return
+            }
+        }
         
         wSC.updatePassword(wSC._userName, userPassword: wSC._userPassword, userSession: wSC._userSession)
         

@@ -33,8 +33,33 @@ class RegisterViewController: UIViewController, WebServiceProtocol {
     @IBAction func RegisterButton(sender: AnyObject) {
         
         let username = usernameTextField.text
-        wSC._userPassword = passwordTextField.text!
+        let password = passwordTextField.text
         let phone = phoneTextField.text
+        let cpassword = cpasswordTextField.text
+        
+        if username == "" || password == "" || phone == "" || cpassword == "" {
+            
+            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
+        if password == cpassword {
+            
+            wSC._userPassword = password!
+            
+        } else {
+            
+            let alertController = UIAlertController(title: "Oops", message: "يجب ان تكون كلمات السر متطابقه", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        }
         
         wSC.register(username!, userPassword: wSC._userPassword, userTelephone: phone!, parseID: "")
     }
@@ -46,8 +71,6 @@ class RegisterViewController: UIViewController, WebServiceProtocol {
     
     func onRegisterSuccess(result:NSDictionary)
     {
-//        // Example for how to parse data
-//        wSC._userCode = result["user_code_active"] as! String
         
         wSC._userName = usernameTextField.text!
         
