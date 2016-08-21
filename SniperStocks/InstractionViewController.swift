@@ -10,6 +10,7 @@ import UIKit
 
 class InstractionViewController: UIViewController, WebServiceProtocol, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var headerTableView: UIView!
     @IBOutlet weak var companyTableView: UITableView!
     
     var wSC = webServiceController()
@@ -25,7 +26,7 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
         
         wSC.getAllCompany(wSC._userName, userSession: wSC._userSession)
         
-        
+        self.companyTableView.tableHeaderView = headerTableView
         
     }
     
@@ -35,6 +36,7 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let tableViewCell = self.companyTableView.dequeueReusableCellWithIdentifier("CompanyCell",forIndexPath: indexPath) as! InstractionTableViewCell
         
         let company = companysArray[indexPath.row] as! Company
