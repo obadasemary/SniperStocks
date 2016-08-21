@@ -29,7 +29,18 @@ class UpdateCodeViewController: UIViewController, WebServiceProtocol {
         
         let code = CodeTextField.text
         
-        wSC.updateCode(wSC._userName, userSession: wSC._userSession, code: code!)
+        if code == "" {
+            
+            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        } else {
+        
+            wSC.updateCode(wSC._userName, userSession: wSC._userSession, code: code!)
+        }
     }
     
     func onUpdateCode(result: NSDictionary) {
