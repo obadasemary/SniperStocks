@@ -36,7 +36,7 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
         
         wSC.getAllCompany(wSC._userName, userSession: wSC._userSession)
         
-        self.setRoundedBorder(5, withBorderWidth: 1, withColor: UIColor(red: 0.0, green: 122.0/2550, blue: 1.0, alpha: 1.0), forButton: showPopupBtn)
+//        self.setRoundedBorder(5, withBorderWidth: 1, withColor: UIColor(red: 0.0, green: 122.0/2550, blue: 1.0, alpha: 1.0), forButton: showPopupBtn)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

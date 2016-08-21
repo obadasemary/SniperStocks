@@ -27,7 +27,20 @@ class ActivateCodeViewController: UIViewController, WebServiceProtocol {
 
     @IBAction func ActivateButton(sender: AnyObject) {
         
-        wSC._userCode = ActivateCodeTextField.text!
+        let activateCode = ActivateCodeTextField.text
+        
+        if activateCode == "" {
+            
+            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        } else {
+            
+            wSC._userCode = activateCode!
+        }
         
         wSC.activedCompteUser(wSC._userName, userCode: wSC._userCode)
         

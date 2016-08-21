@@ -37,10 +37,22 @@ class LoginViewController: UIViewController, WebServiceProtocol {
     @IBAction func loginButton(sender: AnyObject) {
         
         let username = usernameTextField.text
-        wSC._userPassword = passwordTextField.text!
+        let password = passwordTextField.text!
         
-//        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
-        wSC.login("obada", userPassword: "obada", parseID: "")
+        if username == "" || password == "" {
+            
+            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        } else {
+        
+            wSC._userPassword = password
+        }
+        
+        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
     }
 
     @IBAction func resetPassword(sender: AnyObject) {
@@ -74,4 +86,14 @@ class LoginViewController: UIViewController, WebServiceProtocol {
         
         performSegueWithIdentifier("LoginSegue", sender: self)
     }
+    
+//    func showError(title:String, message: String) {
+//        
+//        let optionMenu = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+//        // Add actions to the menu
+//        let cancelAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+//        optionMenu.addAction(cancelAction)
+//        // Display the menu
+//        self.presentViewController(optionMenu, animated: true, completion: nil)
+//    }
 }

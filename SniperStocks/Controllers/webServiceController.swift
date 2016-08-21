@@ -110,6 +110,7 @@ class webServiceController: NSObject {
                         print("Login Success")
                     } else {
                         print("Login Error")
+                        return
                     }
                     
                     
@@ -356,4 +357,14 @@ class webServiceController: NSObject {
         
         return Singleton.sharedInstance
     }
+    
+//    func showError(title:String, message: String) {
+//        
+//        let optionMenu = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+//        // Add actions to the menu
+//        let cancelAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+//        optionMenu.addAction(cancelAction)
+//        // Display the menu
+//        self.presentViewController(optionMenu, animated: true, completion: nil)
+//    }
 }
