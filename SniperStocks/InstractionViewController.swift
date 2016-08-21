@@ -11,6 +11,7 @@ import NMPopUpViewSwift
 
 class InstractionViewController: UIViewController, WebServiceProtocol, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var headerTableView: UIView!
     @IBOutlet weak var companyTableView: UITableView!
     
     var popViewController: PopUpViewControllerSwift!
@@ -36,7 +37,8 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
         
         wSC.getAllCompany(wSC._userName, userSession: wSC._userSession)
         
-//        self.setRoundedBorder(5, withBorderWidth: 1, withColor: UIColor(red: 0.0, green: 122.0/2550, blue: 1.0, alpha: 1.0), forButton: showPopupBtn)
+        self.companyTableView.tableHeaderView = headerTableView
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,6 +47,7 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let tableViewCell = self.companyTableView.dequeueReusableCellWithIdentifier("CompanyCell",forIndexPath: indexPath) as! InstractionTableViewCell
         
         let company = companysArray[indexPath.row] as! Company

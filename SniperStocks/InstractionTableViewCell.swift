@@ -10,6 +10,8 @@ import UIKit
 
 class InstractionTableViewCell: UITableViewCell {
 
+    
+    
     @IBOutlet weak var progressViewRate: UILabel!
     @IBOutlet weak var companyNumber: UILabel!
     @IBOutlet weak var Start: UIButton!
