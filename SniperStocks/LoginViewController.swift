@@ -39,20 +39,22 @@ class LoginViewController: UIViewController, WebServiceProtocol {
         let username = usernameTextField.text
         let password = passwordTextField.text!
         
-        if username == "" || password == "" {
-            
-            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
-            
-            return
-        } else {
+//        if username == "" || password == "" {
+//            
+////            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+////            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+////            
+////            self.presentViewController(alertController, animated: true, completion: nil)
+//            
+//            return
+//        } else {
+//        
+////            wSC._userPassword = password
+//        }
         
-            wSC._userPassword = password
-        }
-        
-        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
+//        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
+                wSC.login("obada", userPassword: "obada", parseID: "")
+
     }
 
     @IBAction func resetPassword(sender: AnyObject) {
