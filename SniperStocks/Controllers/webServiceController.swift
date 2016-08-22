@@ -99,39 +99,46 @@ class webServiceController: NSObject {
                 
                 if let result = response.result.value
                 {
-                    let user = result["user"] as! NSDictionary
-                    
-                    let status = result["status"] as! String
-                    
-                    if status == "success" {
+                    if(result["status"] as! String == "success")
+                    {
+                        let user = result["user"] as! NSDictionary
                         
-                        self.webServiceProtocol?.onLoginSuccess!(user )
+                        let status = result["status"] as! String
                         
-                        print("Login Success")
-                    } else {
-                        print("Login Error")
-                        return
+                        if status == "success" {
+                            
+                            self.webServiceProtocol?.onLoginSuccess!(user )
+                            
+                            print("Login Success")
+                        } else {
+                            print("Login Error")
+                            return
+                        }
+                        
+                        
+    //                    guard (result["status"] as! String == "success") else {
+    //                        print("Login Error")
+    //                        return
+    //                    }
+                        
+    //                    if user["user_name"] as! String == userName
+    //                    {
+    //                        self._userPassword = userPassword
+    //                        self._userName = userName
+    //                        self._parseID = parseID
+    //                        self._userCode = user["user_code_active"] as! String
+    //                        self._userPhone = user["user_phone"] as! String
+    //                        self._userSession = user["user_session"] as! String
+    //                        self._userID = user["user_id"] as! String
+    //                    }
+    //                    self.webServiceProtocol?.onLoginSuccess!(user )
+    //                    
+    //                    print("Login Success")
                     }
-                    
-                    
-//                    guard (result["status"] as! String == "success") else {
-//                        print("Login Error")
-//                        return
-//                    }
-                    
-//                    if user["user_name"] as! String == userName
-//                    {
-//                        self._userPassword = userPassword
-//                        self._userName = userName
-//                        self._parseID = parseID
-//                        self._userCode = user["user_code_active"] as! String
-//                        self._userPhone = user["user_phone"] as! String
-//                        self._userSession = user["user_session"] as! String
-//                        self._userID = user["user_id"] as! String
-//                    }
-//                    self.webServiceProtocol?.onLoginSuccess!(user )
-//                    
-//                    print("Login Success")
+                    else
+                    {
+                        self.webServiceProtocol?.onLoginFailed!()
+                    }
                 }
         }
         

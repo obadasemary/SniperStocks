@@ -12,6 +12,7 @@ import Foundation
 {
     optional func onRegisterSuccess(result:NSDictionary)
     optional func onLoginSuccess(result:NSDictionary)
+    optional func onLoginFailed()
     optional func onGetAllCompanySuccess(companies:NSMutableArray)
     optional func onSendMoneySuccess(result:NSDictionary)
     optional func onUpdateTelephone(result:NSDictionary)

@@ -39,21 +39,21 @@ class LoginViewController: UIViewController, WebServiceProtocol {
         let username = usernameTextField.text
         let password = passwordTextField.text!
         
-//        if username == "" || password == "" {
-//            
-////            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
-////            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-////            
-////            self.presentViewController(alertController, animated: true, completion: nil)
-//            
-//            return
-//        } else {
-//        
-////            wSC._userPassword = password
-//        }
+        if username == "" || password == "" {
+            
+            let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+            return
+        } else {
         
-//        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
-                wSC.login("obada", userPassword: "obada", parseID: "")
+            wSC._userPassword = password
+        }
+        
+        wSC.login(username!, userPassword: wSC._userPassword, parseID: "")
+//                wSC.login("obada", userPassword: "7534", parseID: "")
 
     }
 
@@ -87,6 +87,14 @@ class LoginViewController: UIViewController, WebServiceProtocol {
         
         
         performSegueWithIdentifier("LoginSegue", sender: self)
+    }
+    
+    func onLoginFailed()
+    {
+        let alertController = UIAlertController(title: "Oops", message: "We can't proceed because username or password is wrong.", preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
 //    func showError(title:String, message: String) {
