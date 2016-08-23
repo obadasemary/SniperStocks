@@ -36,6 +36,10 @@ class MyAccountViewController: UIViewController, WebServiceProtocol {
             let res = moms * 30
             let bac = daysa! - res
             da = bac
+        } else {
+            
+            da = daysActivate!
+            mo = 0
         }
         
         
