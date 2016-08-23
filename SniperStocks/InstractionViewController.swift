@@ -14,6 +14,8 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
     @IBOutlet weak var headerTableView: UIView!
     @IBOutlet weak var companyTableView: UITableView!
     
+    @IBOutlet var spinner: UIActivityIndicatorView!
+    
     var popViewController: PopUpViewControllerSwift!
     
     @IBOutlet weak var showPopupBtn: UIButton!
@@ -31,6 +33,11 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        spinner.hidesWhenStopped = true
+        spinner.center = view.center
+        view.addSubview(spinner)
+        spinner.startAnimating()
         
         wSC = webServiceController.sharedInstance()
         wSC.webServiceProtocol = self
@@ -62,21 +69,27 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
         tableViewCell.progressViewRate.text = NSString(format: "%.2f", rate) as String + String("%")
         if company.comp_state == "0"
         {
-           tableViewCell.Case.image = UIImage(named: "redDot")
+            tableViewCell.Case.image = UIImage(named: "redDot")
             tableViewCell.Appreciation.tintColor = UIColor.redColor()
             tableViewCell.progressViewRate.textColor = UIColor.redColor()
+            
+//            self.spinner.stopAnimating()
         }
         else if company.comp_state == "1"
         {
             tableViewCell.Case.image = UIImage(named: "grayDot")
             tableViewCell.Appreciation.tintColor = UIColor.whiteColor()
             tableViewCell.progressViewRate.textColor = UIColor.whiteColor()
+            
+//            self.spinner.stopAnimating()
         }
         else
         {
             tableViewCell.Case.image = UIImage(named: "greenDot")
             tableViewCell.Appreciation.tintColor = UIColor.greenColor()
             tableViewCell.progressViewRate.textColor = UIColor.greenColor()
+            
+//            self.spinner.stopAnimating()
         }
         
         
@@ -120,6 +133,8 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
             
             self.companysArray = companies
             self.companyTableView.reloadData()
+            
+            self.spinner.stopAnimating()
         }
     }
     
