@@ -20,7 +20,43 @@ class MyAccountViewController: UIViewController, WebServiceProtocol {
         wSC = webServiceController.sharedInstance()
         wSC.webServiceProtocol = self
         
-//        showEndDate()
+
+        let currentDate = NSDate()
+        let userDateActive = Int(wSC._userDateActive)
+        
+        let daysActivate = userDateActive
+        let daysa = daysActivate
+        var mo = 0
+        var da = 0
+        
+        if daysActivate >= 30 {
+            
+            let moms = daysActivate! / 30
+            mo = moms
+            let res = moms * 30
+            let bac = daysa! - res
+            da = bac
+        }
+        
+        
+        let monthsToAdd = mo
+        let daysToAdd = da
+        
+        //        var calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Month, value: monthsToAdd, toDate: currentDate, options: NSCalendarOptions.init(rawValue: 0))
+        //        calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: daysToAdd, toDate: currentDate, options: NSCalendarOptions.init(rawValue: 0))
+        
+        
+        let newDateComponents = NSDateComponents()
+        newDateComponents.month = monthsToAdd
+        newDateComponents.day = daysToAdd
+        
+        let calculatedDate = NSCalendar.currentCalendar().dateByAddingComponents(newDateComponents, toDate: currentDate, options: NSCalendarOptions.init(rawValue: 0))
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy - MM - dd"
+        let convertedDate = dateFormatter.stringFromDate(calculatedDate!)
+        
+        endDate.text = "\(convertedDate)"
     }
     
     @IBAction func ChangePasswordButton(sender: AnyObject) {
@@ -38,25 +74,60 @@ class MyAccountViewController: UIViewController, WebServiceProtocol {
     
     func showEndDate() {
         
-        let userDateActive = wSC._userDateActive
-        let userDateRegister = wSC._userDateRegister
+        let currentDate = NSDate()
+        let userDateActive = Int(wSC._userDateActive)
         
-        var date = 0
+        let daysActivate = userDateActive
+        let daysa = daysActivate
+        var mo = 0
+        var da = 0
         
-        date = Int(userDateActive)! - 6
+        if daysActivate >= 30 {
+            
+            let moms = daysActivate! / 30
+            mo = moms
+            let res = moms * 30
+            let bac = daysa! - res
+            da = bac
+        }
         
-        let dateFormatter = NSDateFormatter()
         
-        let dateAsString = userDateActive
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-        let newDate = dateFormatter.dateFromString(dateAsString)
+        let monthsToAdd = mo
+        let daysToAdd = da
         
-        print(newDate)
+//        var calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Month, value: monthsToAdd, toDate: currentDate, options: NSCalendarOptions.init(rawValue: 0))
+//        calculatedDate = NSCalendar.currentCalendar().dateByAddingUnit(NSCalendarUnit.Day, value: daysToAdd, toDate: currentDate, options: NSCalendarOptions.init(rawValue: 0))
         
-        print(date)
         
-        print("userDateActive: \(userDateActive)")
-        print("userDateRegister: \(userDateRegister)")
+        let newDateComponents = NSDateComponents()
+        newDateComponents.month = monthsToAdd
+        newDateComponents.day = daysToAdd
+        
+        let calculatedDate = NSCalendar.currentCalendar().dateByAddingComponents(newDateComponents, toDate: currentDate, options: NSCalendarOptions.init(rawValue: 0))
+        
+        print(calculatedDate)
+        
+        
+        
+        
+//        let userDateRegister = wSC._userDateRegister
+//        
+//        var date = 0
+//        
+//        date = Int(userDateActive)! - 6
+//        
+//        let dateFormatter = NSDateFormatter()
+//        
+//        let dateAsString = userDateActive
+//        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+//        let newDate = dateFormatter.dateFromString(dateAsString)
+//        
+//        print(newDate)
+//        
+//        print(date)
+//        
+//        print("userDateActive: \(userDateActive)")
+//        print("userDateRegister: \(userDateRegister)")
     }
     
 }
