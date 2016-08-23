@@ -8,12 +8,19 @@
 
 import UIKit
 
-class MyAccountViewController: UIViewController {
+class MyAccountViewController: UIViewController, WebServiceProtocol {
 
+    @IBOutlet weak var endDate: UILabel!
+    
+    var wSC = webServiceController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        wSC = webServiceController.sharedInstance()
+        wSC.webServiceProtocol = self
+        
+//        showEndDate()
     }
     
     @IBAction func ChangePasswordButton(sender: AnyObject) {
@@ -28,4 +35,28 @@ class MyAccountViewController: UIViewController {
     @IBAction func ActivateButton(sender: AnyObject) {
         
     }
+    
+    func showEndDate() {
+        
+        let userDateActive = wSC._userDateActive
+        let userDateRegister = wSC._userDateRegister
+        
+        var date = 0
+        
+        date = Int(userDateActive)! - 6
+        
+        let dateFormatter = NSDateFormatter()
+        
+        let dateAsString = userDateActive
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        let newDate = dateFormatter.dateFromString(dateAsString)
+        
+        print(newDate)
+        
+        print(date)
+        
+        print("userDateActive: \(userDateActive)")
+        print("userDateRegister: \(userDateRegister)")
+    }
+    
 }
