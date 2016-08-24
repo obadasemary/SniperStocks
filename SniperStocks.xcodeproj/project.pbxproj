@@ -335,7 +335,7 @@
 				TargetAttributes = {
 					AF106BB01D0D571A0053130C = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = KM569NM77P;
+						DevelopmentTeam = 2Z89C84UBJ;
 					};
 					AF106BC41D0D57210053130C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -812,7 +812,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SniperStocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocks;
+				PRODUCT_BUNDLE_IDENTIFIER = qa.com.snniper.SniperStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -828,7 +828,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SniperStocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = au.com.molutions.SniperStocks;
+				PRODUCT_BUNDLE_IDENTIFIER = qa.com.snniper.SniperStocks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
