@@ -20,6 +20,8 @@ class SendMoneyViewController: UIViewController, WebServiceProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.hideKeyboardWhenTappedAround()
+        
         wSC = webServiceController.sharedInstance()
         wSC.webServiceProtocol = self
         
