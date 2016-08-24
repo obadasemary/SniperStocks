@@ -613,7 +613,7 @@
                                 </constraints>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHR-KW-qV5">
                                 <rect key="frame" x="52" y="256" width="216" height="52"/>
@@ -741,7 +741,7 @@
                                 </constraints>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXg-Lh-5hU">
                                 <rect key="frame" x="52" y="331" width="216" height="52"/>
@@ -1294,7 +1294,7 @@
                                     <constraint firstAttribute="width" constant="216" id="q48-y8-wJt"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="**********" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9w-et-lBB">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v9w-et-lBB">
                                 <rect key="frame" x="52" y="346" width="172" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="1zA-xk-onU"/>
@@ -1302,7 +1302,7 @@
                                 </constraints>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="light"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oiD-GM-M0b">
                                 <rect key="frame" x="52" y="220" width="172" height="30"/>
@@ -1657,6 +1657,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9vQ-dx-MCe"/>
-        <segue reference="Pb4-qF-pwX"/>
+        <segue reference="6SI-cg-Nkg"/>
     </inferredMetricsTieBreakers>
 </document>
