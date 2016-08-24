@@ -20,7 +20,8 @@ class LoginViewController: UIViewController, WebServiceProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let wSC = webServiceController()
+        self.hideKeyboardWhenTappedAround()
+        
         wSC = webServiceController.sharedInstance()
         wSC.webServiceProtocol = self
         

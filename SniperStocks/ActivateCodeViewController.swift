@@ -17,12 +17,12 @@ class ActivateCodeViewController: UIViewController, WebServiceProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.hideKeyboardWhenTappedAround()
+        
         wSC = webServiceController.sharedInstance()
         wSC.webServiceProtocol = self
         
         ActivateCodeTextField.attributedPlaceholder = NSAttributedString(string:"كود التفعيل", attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
-        
-
     }
 
     @IBAction func ActivateButton(sender: AnyObject) {
