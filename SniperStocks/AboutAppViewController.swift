@@ -16,41 +16,14 @@ class AboutAppViewController: UIViewController {
 
         self.hideKeyboardWhenTappedAround()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func showVideoOne(sender: AnyObject) {
         
-        if let url = NSURL(string: "https://youtu.be/WCl-WHpH0zk") {
-            
-            let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
-            presentViewController(safariController, animated: true, completion: nil)
-        } else {
-            return
-        }
+        performSegueWithIdentifier("showVideoOne", sender: self)
     }
 
     @IBAction func showVideoTwo(sender: AnyObject) {
         
-        if let url = NSURL(string: "https://youtu.be/jnJdXj3P26M") {
-            
-            let safariController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
-            presentViewController(safariController, animated: true, completion: nil)
-        } else {
-            return
-        }
+        performSegueWithIdentifier("showVideoTwo", sender: self)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

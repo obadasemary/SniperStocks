@@ -96,6 +96,29 @@ class InstractionViewController: UIViewController, WebServiceProtocol, UITableVi
         return tableViewCell
     }
     
+//    
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+////        let cell = self.companyTableView.dequeueReusableCellWithIdentifier("CompanyCell", forIndexPath: indexPath)
+//        let text = cell.textLabel?.text
+//        
+//        print(text)
+//        
+//////        let alertView = UIAlertView()
+//////        alertView.addButtonWithTitle("Ok")
+//////        alertView.title = "Row Selected"
+//////        alertView.message = "Rows"
+//////        tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.Middle)
+//////
+//////        alertView.show()
+////        
+//////        let indexPath = tableView.indexPathForSelectedRow!
+////        
+////        let tableViewCell = self.companyTableView.dequeueReusableCellWithIdentifier("CompanyCell",forIndexPath: indexPath) as! InstractionTableViewCell
+////        
+////        print(tableViewCell.companyNumber)
+//    }
+    
     @IBAction func showGood(sender: AnyObject) {
         
         let bundle = NSBundle(forClass: PopUpViewControllerSwift.self)

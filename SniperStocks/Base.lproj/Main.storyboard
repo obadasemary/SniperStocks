@@ -703,10 +703,82 @@
                     <tabBarItem key="tabBarItem" title="حول التطبيق" image="aboutApp" id="LTq-UG-56w"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="qFc-TN-9na" kind="push" identifier="showVideoOne" id="LiX-Wp-giO"/>
+                        <segue destination="0Vf-ER-Q3u" kind="push" identifier="showVideoTwo" id="Bmp-MV-Nxw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdI-as-66r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5252" y="544"/>
+        </scene>
+        <!--Web Video Two View Controller-->
+        <scene sceneID="gUi-Gm-NXS">
+            <objects>
+                <viewController id="0Vf-ER-Q3u" customClass="WebVideoTwoViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AqE-Li-J41"/>
+                        <viewControllerLayoutGuide type="bottom" id="c6a-Ks-AAe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jGr-QY-lG7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8T-cW-w7q">
+                                <rect key="frame" x="-4" y="64" width="328" height="460"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h8T-cW-w7q" firstAttribute="top" secondItem="AqE-Li-J41" secondAttribute="bottom" id="YtS-do-GCg"/>
+                            <constraint firstItem="c6a-Ks-AAe" firstAttribute="top" secondItem="h8T-cW-w7q" secondAttribute="bottom" id="fOt-hS-KVA"/>
+                            <constraint firstItem="h8T-cW-w7q" firstAttribute="leading" secondItem="jGr-QY-lG7" secondAttribute="leadingMargin" constant="-20" id="fef-BG-Pd2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h8T-cW-w7q" secondAttribute="trailing" constant="-20" id="gfJ-l1-Uzc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fa0-ih-g7N"/>
+                    <connections>
+                        <outlet property="webView" destination="h8T-cW-w7q" id="aKO-iy-NYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xek-Cy-dIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5300" y="1310"/>
+        </scene>
+        <!--Web Video One View Controller-->
+        <scene sceneID="8V1-M0-LEY">
+            <objects>
+                <viewController id="qFc-TN-9na" customClass="WebVideoOneViewController" customModule="SniperStocks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8fr-9n-TmV"/>
+                        <viewControllerLayoutGuide type="bottom" id="1cP-Gx-WgX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fa9-nK-Qzo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dV1-1B-mxm">
+                                <rect key="frame" x="-4" y="64" width="328" height="460"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dV1-1B-mxm" firstAttribute="top" secondItem="8fr-9n-TmV" secondAttribute="bottom" id="JkD-WL-Lnz"/>
+                            <constraint firstItem="dV1-1B-mxm" firstAttribute="leading" secondItem="fa9-nK-Qzo" secondAttribute="leadingMargin" constant="-20" id="XH1-da-xHz"/>
+                            <constraint firstItem="1cP-Gx-WgX" firstAttribute="top" secondItem="dV1-1B-mxm" secondAttribute="bottom" id="aRe-Cf-xfR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dV1-1B-mxm" secondAttribute="trailing" constant="-20" id="wLl-ff-gzA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kd4-8X-Iyq"/>
+                    <connections>
+                        <outlet property="webView" destination="dV1-1B-mxm" id="j07-0S-V23"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTk-bm-LOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5641" y="544"/>
         </scene>
         <!--Update Code View Controller-->
         <scene sceneID="OLJ-ov-VEv">
@@ -905,10 +977,10 @@
                 <tabBarController id="ngW-z0-xYX" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="4NR-yb-cUk">
                         <barButtonItem key="leftBarButtonItem" image="backButton" id="Y0k-Ue-UEU">
-                            <color key="tintColor" red="1" green="0.42264894240000001" blue="0.001131755526" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="logoButton" id="4tI-hN-mVT">
-                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Z98-DF-AMl">
